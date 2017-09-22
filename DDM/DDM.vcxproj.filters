@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="头文件\Grid Header">
+      <UniqueIdentifier>{2faa9a22-9c87-4ab9-a39c-be797b3aab8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Grid Source">
+      <UniqueIdentifier>{c1193978-5593-4239-8cc9-9a58a87730f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Ctrl Header">
+      <UniqueIdentifier>{9424eef2-ecf9-4d37-9a20-298bb467b719}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ctrl Source">
+      <UniqueIdentifier>{fb434cff-5196-4e2d-bf3c-275e66d5b467}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\Dialog Header">
+      <UniqueIdentifier>{518a5079-14cf-4d8b-9caa-0bac2a188f1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Dialog Source">
+      <UniqueIdentifier>{ace55d9b-a527-480f-ba36-71437da7ec3e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DDM.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DDMDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DDMView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\CellRange.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridCell.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridCellBase.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridCtrl.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\GridDropTarget.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\InPlaceEdit.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\MemDC2.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="GridCtrl_src\TitleTip.h">
+      <Filter>头文件\Grid Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MainTab.h">
+      <Filter>头文件\Ctrl Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PutInGrid.h">
+      <Filter>头文件\Ctrl Header</Filter>
+    </ClInclude>
+    <ClInclude Include="PutInDlg.h">
+      <Filter>头文件\Dialog Header</Filter>
+    </ClInclude>
+    <ClInclude Include="OutDlg.h">
+      <Filter>头文件\Dialog Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NavigetionDlg.h">
+      <Filter>头文件\Dialog Header</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseDlg.h">
+      <Filter>头文件\Dialog Header</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DDM.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DDMDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DDMView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridCell.cpp">
+      <Filter>源文件\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridCellBase.cpp">
+      <Filter>源文件\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridCtrl.cpp">
+      <Filter>源文件\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\GridDropTarget.cpp">
+      <Filter>源文件\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\InPlaceEdit.cpp">
+      <Filter>源文件\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="GridCtrl_src\TitleTip.cpp">
+      <Filter>源文件\Grid Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MainTab.cpp">
+      <Filter>源文件\Ctrl Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PutInDlg.cpp">
+      <Filter>源文件\Dialog Source</Filter>
+    </ClCompile>
+    <ClCompile Include="OutDlg.cpp">
+      <Filter>源文件\Dialog Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NavigetionDlg.cpp">
+      <Filter>源文件\Dialog Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseDlg.cpp">
+      <Filter>源文件\Dialog Source</Filter>
+    </ClCompile>
+    <ClCompile Include="PutInGrid.cpp">
+      <Filter>源文件\Ctrl Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="DDM.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\DDM.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\DDMDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\DDM.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
