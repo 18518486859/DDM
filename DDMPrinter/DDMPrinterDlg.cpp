@@ -155,16 +155,19 @@ HCURSOR CDDMPrinterDlg::OnQueryDragIcon()
 BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 	CRuntimeClass* pPreviewViewClass, CPrintPreviewState* pState)
 {
-	ASSERT_VALID_IDR(nIDResource);
+	ASSERT_VALID_IDR(nIDResource);//资源是否有效
 	ASSERT_VALID(pPrintView);
 	ASSERT(pPreviewViewClass != NULL);
 	ASSERT(pPreviewViewClass->IsDerivedFrom(RUNTIME_CLASS(CPreviewView)));
 	ASSERT(pState != NULL);
 
-	CWnd* pMainWnd = GetParentFrame();
+	CWnd* pMainWnd = GetParentFrame();//则返回框架窗口的指针；否则返回NULL。
+
+	//DYNAMIC_DOWNCAST(CFrameWnd, pMainWnd)
+	//如果pMainWnd指针所指向的对象是CFrameWnd类型的，就返回这个指针。否则返回NULL
 	if (DYNAMIC_DOWNCAST(CFrameWnd, pMainWnd) == NULL)
 	{
-		// if it's not a frame, we'll try the main window
+		// 如果不是窗体，我们会尝获取试主窗口指针
 		pMainWnd = AfxGetMainWnd();
 	}
 
