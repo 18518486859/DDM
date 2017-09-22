@@ -171,6 +171,8 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 		pMainWnd = AfxGetMainWnd();
 	}
 
+	//CFrameWnd* pParent = STATIC_DOWNCAST(CFrameWnd, pMainWnd)
+	//将pMainWnd指针取出来转换成CFrameWnd类型并赋值给pParent 。
 	CFrameWnd* pParent = STATIC_DOWNCAST(CFrameWnd, pMainWnd);
 	ASSERT_VALID(pParent);
 
