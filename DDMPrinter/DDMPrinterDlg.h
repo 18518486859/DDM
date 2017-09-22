@@ -18,7 +18,8 @@ public:
 	protected:
 	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV 支持
 
-
+public:
+	CPaperWnd m_PWnd;
 // 实现
 protected:
 	HICON m_hIcon;
