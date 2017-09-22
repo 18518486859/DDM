@@ -152,3 +152,160 @@ HCURSOR CDDMPrinterDlg::OnQueryDragIcon()
 	return static_cast<HCURSOR>(m_hIcon);
 }
 
+BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
+	CRuntimeClass* pPreviewViewClass, CPrintPreviewState* pState)
+{
+	ASSERT_VALID_IDR(nIDResource);
+	ASSERT_VALID(pPrintView);
+	ASSERT(pPreviewViewClass != NULL);
+	ASSERT(pPreviewViewClass->IsDerivedFrom(RUNTIME_CLASS(CPreviewView)));
+	ASSERT(pState != NULL);
+
+	CWnd* pMainWnd = GetParentFrame();
+	if (DYNAMIC_DOWNCAST(CFrameWnd, pMainWnd) == NULL)
+	{
+		// if it's not a frame, we'll try the main window
+		pMainWnd = AfxGetMainWnd();
+	}
+
+	CFrameWnd* pParent = STATIC_DOWNCAST(CFrameWnd, pMainWnd);
+	ASSERT_VALID(pParent);
+
+	CCreateContext context;
+	context.m_pCurrentFrame = pParent;
+	context.m_pCurrentDoc = GetDocument();
+	context.m_pLastView = this;
+
+	// Create the preview view object
+	CPreviewView* pView = (CPreviewView*)pPreviewViewClass->CreateObject();
+	if (pView == NULL)
+	{
+		TRACE(traceAppMsg, 0, "Error: Failed to create preview view.\n");
+		return FALSE;
+	}
+	ASSERT_KINDOF(CPreviewView, pView);
+	pView->m_pPreviewState = pState;        // save pointer
+
+	pParent->OnSetPreviewMode(TRUE, pState);    // Take over Frame Window
+
+	// Create the toolbar from the dialog resource
+	pView->m_pToolBar = new CDialogBar;
+
+	CFrameWnd *pParentFrame = pParent->GetActiveFrame();
+	ASSERT(pParentFrame);
+
+	COleIPFrameWnd *pInPlaceFrame = DYNAMIC_DOWNCAST(COleIPFrameWnd, pParentFrame);
+	if (pInPlaceFrame)
+	{
+		CDocument *pViewDoc = GetDocument();
+		COleServerDoc *pDoc = DYNAMIC_DOWNCAST(COleServerDoc, pViewDoc);
+		if (!pDoc)
+		{
+			pParent->OnSetPreviewMode(FALSE, pState);   // restore Frame Window
+			delete pView->m_pToolBar;       // not autodestruct yet
+			pView->m_pToolBar = NULL;
+			pView->m_pPreviewState = NULL;  // do not delete state structure
+			delete pView;
+			return FALSE;
+		}
+
+		CFrameWnd *pFrame = (CFrameWnd*)pInPlaceFrame->GetDocFrame();
+		if (!pFrame)
+			pFrame = pInPlaceFrame->GetMainFrame();
+		ASSERT(pFrame != NULL);
+
+		// hide existing toolbars.
+		pDoc->OnDocWindowActivate(FALSE);
+
+		if (pFrame && pView->m_pToolBar->Create(pFrame,
+			ATL_MAKEINTRESOURCE(nIDResource), CBRS_TOP, AFX_IDW_PREVIEW_BAR))
+		{
+			// automatic cleanup
+			pView->m_pToolBar->m_bAutoDelete = TRUE;
+
+			// Tell the toolbar where to route command messages
+			pView->m_pToolBar->SetInPlaceOwner(pInPlaceFrame);
+
+			// now, merge the print preview toolbar into the
+			// appropriate frame which would be the document
+			// frame for an mdi container or the app frame for
+			// an sdi container.
+			CRect rcBorder;
+			BOOL bFrame = FALSE;
+			CComPtr<IOleInPlaceUIWindow> spIPUIWindow;
+
+			if (FAILED(pInPlaceFrame->GetInPlaceDocFrame(&spIPUIWindow)))
+			{
+				pInPlaceFrame->GetInPlaceFrame(&spIPUIWindow);
+				bFrame = TRUE;
+			}
+			ASSERT(spIPUIWindow);
+			if (spIPUIWindow)
+			{
+				spIPUIWindow->GetBorder(rcBorder);
+				pDoc->OnResizeBorder(rcBorder, spIPUIWindow, bFrame);
+			}
+			pInPlaceFrame->SetPreviewMode(TRUE);
+		}
+		else
+		{
+			TRACE(traceAppMsg, 0, "Error: Preview could not create toolbar dialog.\n");
+			pParent->OnSetPreviewMode(FALSE, pState);   // restore Frame Window
+			delete pView->m_pToolBar;       // not autodestruct yet
+			pView->m_pToolBar = NULL;
+			pView->m_pPreviewState = NULL;  // do not delete state structure
+			delete pView;
+			return FALSE;
+		}
+	}
+	else
+	{
+		if (!pView->m_pToolBar->Create(pParent, ATL_MAKEINTRESOURCE(nIDResource),
+			CBRS_TOP, AFX_IDW_PREVIEW_BAR))
+		{
+			TRACE(traceAppMsg, 0, "Error: Preview could not create toolbar dialog.\n");
+			pParent->OnSetPreviewMode(FALSE, pState);   // restore Frame Window
+			delete pView->m_pToolBar;       // not autodestruct yet
+			pView->m_pToolBar = NULL;
+			pView->m_pPreviewState = NULL;  // do not delete state structure
+			delete pView;
+			return FALSE;
+		}
+		pView->m_pToolBar->m_bAutoDelete = TRUE;    // automatic cleanup
+	}
+
+	// Create the preview view as a child of the App Main Window.  This
+	// is a sibling of this view if this is an SDI app.  This is NOT a sibling
+	// if this is an MDI app.
+
+	if (!pView->Create(NULL, NULL, AFX_WS_DEFAULT_VIEW,
+		CRect(0, 0, 0, 0), pParent, AFX_IDW_PANE_FIRST, &context))
+	{
+		TRACE(traceAppMsg, 0, "Error: couldn't create preview view for frame.\n");
+		pParent->OnSetPreviewMode(FALSE, pState);   // restore Frame Window
+		pView->m_pPreviewState = NULL;  // do not delete state structure
+		delete pView;
+		return FALSE;
+	}
+
+	// Preview window shown now
+	pState->pViewActiveOld = pParent->GetActiveView();
+	CView* pActiveView = pParent->GetActiveFrame()->GetActiveView();
+
+	if (pActiveView != NULL)
+		pActiveView->OnActivateView(FALSE, pActiveView, pActiveView);
+
+	if (!pView->SetPrintView(pPrintView))
+	{
+		pView->OnPreviewClose();
+		return TRUE;            // signal that OnEndPrintPreview was called
+	}
+
+	pParent->SetActiveView(pView);  // set active view - even for MDI
+
+	pView->m_pToolBar->SendMessage(WM_IDLEUPDATECMDUI, (WPARAM)TRUE);
+	pParent->RecalcLayout();            // position and size everything
+	pParent->UpdateWindow();
+
+	return TRUE;
+}
