@@ -130,8 +130,13 @@ void CDDMPrinterDlg::OnPaint()
 		GetClientRect(rect);
 		dc.FillSolidRect(rect, RGB(229, 233,237));
 
-		dc.SelectObject(CBrush(RGB(255, 125, 20)));
-		dc.Rectangle(30, 30, 500, 500);
+		CRect rect2(30, 30, 500, 500);
+		dc.Rectangle(rect2);
+		
+		CBrush brush(HS_HORIZONTAL, RGB(150,150,150));
+		dc.FrameRect(rect2,&brush);
+		//dc.SelectObject(CBrush(RGB(255, 125, 20)));
+		//dc.Rectangle(30, 30, 500, 500);
 
 }
 
