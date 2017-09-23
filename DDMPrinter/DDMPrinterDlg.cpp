@@ -126,6 +126,9 @@ void CDDMPrinterDlg::OnPaint()
 {
 
 		CPaintDC dc(this); // 用于绘制的设备上下文
+		CRect   rect;
+		GetClientRect(rect);
+		dc.FillSolidRect(rect, RGB(229, 233,237));
 
 		dc.SelectObject(CBrush(RGB(255, 125, 20)));
 		dc.Rectangle(30, 30, 500, 500);
