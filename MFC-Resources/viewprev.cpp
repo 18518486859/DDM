@@ -78,7 +78,7 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 	ASSERT(pPreviewViewClass->IsDerivedFrom(RUNTIME_CLASS(CPreviewView)));
 	ASSERT(pState != NULL);
 
-	CWnd* pMainWnd = GetParentFrame();
+	CWnd* pMainWnd = GetParentFrame();//获取主窗口指针
 	if (DYNAMIC_DOWNCAST(CFrameWnd, pMainWnd) == NULL)
 	{
 		// if it's not a frame, we'll try the main window
