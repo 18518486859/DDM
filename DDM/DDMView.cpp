@@ -30,7 +30,6 @@ BEGIN_MESSAGE_MAP(CDDMView, CView)
 	ON_NOTIFY(TCN_SELCHANGE, IDT_DDMTAB, &CDDMView::OnTcnSelchangeTab1)
 	ON_WM_SIZE()
 END_MESSAGE_MAP()
-
 // CDDMView ¹¹Ôì/Îö¹¹
 
 CDDMView::CDDMView()

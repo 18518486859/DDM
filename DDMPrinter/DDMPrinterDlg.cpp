@@ -126,9 +126,17 @@ void CDDMPrinterDlg::OnPaint()
 {
 
 		CPaintDC dc(this); // 用于绘制的设备上下文
+		int pageWidth = 21000;
+		int pageHeight = -29700;
+		CRect rect;
+		dc.SetMapMode(MM_HIMETRIC);
+		GetClientRect(rect);
+		dc.DPtoLP(rect);
+		int leftL = (rect.right - pageWidth) / 2;
+		
 
 		dc.SelectObject(CBrush(RGB(255, 125, 20)));
-		dc.Rectangle(30, 30, 500, 500);
+		dc.Rectangle(leftL, -3000, pageWidth+leftL, pageHeight-3000);
 
 }
 
