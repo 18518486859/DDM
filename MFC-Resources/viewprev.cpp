@@ -20,12 +20,15 @@ BOOL CALLBACK _AfxPreviewCloseProc(CFrameWnd* pFrameWnd);
 CPrintPreviewState::CPrintPreviewState()
 {
 	// set defaults
+
+	//在MFC底层机制中，使用预定义AFX_IDW_PANE_FIRST
+	//来标识应用程序框架窗口中默认的文档窗口(视图)。
 	nIDMainPane = AFX_IDW_PANE_FIRST;
-	dwStates = AFX_CONTROLBAR_MASK(AFX_IDW_STATUS_BAR);
-						// status bar visible if available
+	dwStates = AFX_CONTROLBAR_MASK(AFX_IDW_STATUS_BAR);//值为2
+						// 如果可用状态栏可见
 	lpfnCloseProc = _AfxPreviewCloseProc;
-						// set frame hook so closing the frame window
-						//  when in preview state will just end the mode
+						// 设置框架挂钩，关闭框架窗口
+						//  在预览状态时，只会结束模式
 	hMenu = NULL;
 	pViewActiveOld = NULL;
 	hAccelTable = NULL;
@@ -44,24 +47,18 @@ void CView::OnFilePrintPreview()
 
 	TRY
 	{
-		// DoPrintPreview's return value does not necessarily indicate that
-		// Print preview succeeded or failed, but rather what actions are necessary
-		// at this point.  If DoPrintPreview returns TRUE, it means that
-		// OnEndPrintPreview will be (or has already been) called and the
-		// pState structure will be/has been deleted.
-		// If DoPrintPreview returns FALSE, it means that OnEndPrintPreview
-		// WILL NOT be called and that cleanup, including deleting pState
-		// must be done here.
+		/* DoPrintPreview的返回值并不一定表示打印预览成功或失败,更重要的是需要采取什么行动.
+		在这一点上,如果DoPrintPreview返回TRUE，则意味着OnEndPrintPreview(或已经被)调用了。
+		pState结构将被删除。如果DoPrintPreview返回FALSE，意味着OnEndPrintPreview将不会调用
+		和清理，包括删除pState必须在这里完成。*/
 
 		if (!DoPrintPreview(AFX_IDD_PREVIEW_TOOLBAR, this,
 								RUNTIME_CLASS(CPreviewView), pState))
 		{
-			// In derived classes, reverse special window handling here for
-			// Preview failure case
-
+			// 在派生类中，预览失败后和处理
 			TRACE(traceAppMsg, 0, "Error: DoPrintPreview failed.\n");
 			AfxMessageBox(AFX_IDP_COMMAND_FAILURE);
-			delete pState;      // preview failed to initialize, delete State now
+			delete pState;      // 预览没有初始化，现在删除pState
 		}
 	}
 	CATCH_ALL(e)
