@@ -2258,5 +2258,8 @@
     <ClCompile Include="winutil.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="..\DDM\stdafx.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

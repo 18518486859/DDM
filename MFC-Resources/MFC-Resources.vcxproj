@@ -412,6 +412,7 @@
     <ClInclude Include="winspool.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\DDM\stdafx.cpp" />
     <ClCompile Include="afxabort.cpp" />
     <ClCompile Include="afxacceleratorkey.cpp" />
     <ClCompile Include="afxacceleratorkeyassignctrl.cpp" />
