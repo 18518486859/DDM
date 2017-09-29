@@ -1,0 +1,2262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="afx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxacceleratorkey.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxacceleratorkeyassignctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxaccessibility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxadv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxanimationcontroller.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxanimationhelper.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxautohidebar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxautohidebutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxautohidedocksite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxbasepane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxbaseribbonelement.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxbasetabbedpane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxbasetabctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxbasetoolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcaptionbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcaptionbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcaptionmenubutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcmdusagecount.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcmn.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcoll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcolorbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcolorbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcolordialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcolormenubutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcolorpickerctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcolorpopupmenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcolorpropertysheet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcom_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcommandmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcontextmenumanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcontrolbarimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcontrolbars.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcontrolbarutil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcontrolrenderer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxconv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxctl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxctrlcontainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcustomcolorspropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcustomizebutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcustomizemenubutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxcview.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdao.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdatarecovery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdb_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdd_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdesktopalertdialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdesktopalertwnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdhtml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdialogex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdialogimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdisp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdlgs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdll_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdllx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdockablepane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdockablepaneadapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdockingmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdockingpanesrow.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdocksite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdocob.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdragframeimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdrawmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdropdownlistbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdropdowntoolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxdtctl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxeditbrowsectrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxext.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxfontcombobox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxframeimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxframewndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxfullscreenimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxglobals.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxglobalutils.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxheaderctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxhh.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxhtml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afximageeditordialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afximagepaintarea.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afximpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxinet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxkeyboardmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxkeymapdialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxlinkctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxlistctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmaskededit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmdichildwndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmdiclientareawnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmdiframewndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmenubar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmenubutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmenuhash.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmenuimages.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmenutearoffmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmousemanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmousepropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmsg_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmultidoctemplateex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxmultipaneframewnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxocc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxodlgs.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxole.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxolecntrframewndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoledb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoledocipframewndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoleipframewndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoleserverdocex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoutlookbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoutlookbarpane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoutlookbarpaneadapter.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoutlookbarpanebutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxoutlookbartabctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpanecontainer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpanecontainermanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpanedialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpanedivider.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpaneframewnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxplex_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpopupmenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpopupmenubar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpreviewviewex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpriv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpriv2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpropertygridctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpropertygridtooltipctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxpropertysheet.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxrebar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxrebarstate.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxrecentdocksiteinfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxregpath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxrendertarget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxres.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonbuttonsgroup.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboncategory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboncheckbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboncollector.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboncolorbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboncombobox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboncommandslistbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonconstructor.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboncustomizedialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonedit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboninfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribboninfoloader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonkeyboardcustomizedialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonkeytip.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonlabel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonlinkctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonmainpanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonminitoolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonpalettegallery.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonpanel.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonpanelmenu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonprogressbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonquickaccesstoolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonres.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonslider.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonstatusbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonstatusbarpane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxribbonundobutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxrich.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxsettingsstore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxshelllistctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxshellmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxshelltreectrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxshowallbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxsmartdockingguide.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxsmartdockinghighlighterwnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxsmartdockingmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxsock.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxsound.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxspinbuttonctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxsplitterwndex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxstandardcolorspropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxstat_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxstatusbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxstr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtabbedpane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtabctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtabview.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtagmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtaskdialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtaskspane.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtaskspaneframewnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtempl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtls_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarbuttoncustomizedialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarbuttonslistbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarcomboboxbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbardatetimectrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbardropsource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbardroptarget.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbareditboxbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarfontcombobox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarimages.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarmenubutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarmenubuttonsbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarnamedialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarscommandslistbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarscustomizedialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarskeyboardpropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarslistcheckbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarslistpropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarsmenupropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarsoptionspropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarspineditboxbutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarstoolspropertypage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtoolbarsystemmenubutton.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtooltipctrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxtooltipmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxusertool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxusertoolsmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxv_cfg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxv_cpu.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxv_dll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxv_w32.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxver_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanageroffice2003.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanageroffice2007.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanagerofficexp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanagervs2005.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanagervs2008.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanagerwindows.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvisualmanagerwindows7.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxvslistbox.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxwfrmcmd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxwin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxwinappex.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxwindowsmanagerdialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxwinforms.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="afxwinverapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlacc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlalloc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlbase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlbuild.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlchecked.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlcoll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlcom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlcomcli.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ATLComMem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ATLComTime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlconv.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlcore.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlctl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlcur.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atldb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atldbcli.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atldbgmem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atldbsch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atldef.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlenc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlevent.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlexcept.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlfile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlhandler.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlhandlerimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlhost.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atliface.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlimage.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlmem.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlpath.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlplus.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlpreviewctrlimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlrc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlsafe.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlsecurity.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlsimpcoll.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlsimpstr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlsnap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlsocket.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlstdthunk.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlstr.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlsync.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atltime.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atltrace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atltransactionmanager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atltypes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlutil.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlwin.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlwinverapi.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="atlxml.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="cstringt.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ctlimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="daoimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dbimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="dispimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="elements.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="fixalloc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="mfcm80.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="occimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ocdb.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ocdbid.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="olebind.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="oleimpl2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="sockimpl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="statreg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winhand_.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="winspool.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="afxabort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxacceleratorkey.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxacceleratorkeyassignctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxanimationcontroller.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxasert.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxautohidebar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxautohidebutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxautohidedocksite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxbasepane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxbaseribbonelement.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxbasetabbedpane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxbasetabctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxbasetoolbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcaptionbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcaptionbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcaptionmenubutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcmdusagecount.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcolorbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcolorbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcolordialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcolormenubutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcolorpickerctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcolorpopupmenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcolorpropertysheet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcommandmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcontextmenumanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcontrolbarimpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcontrolrenderer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcrit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxctrlcontainer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxctrlcontainer2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcustomcolorspropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcustomizebutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxcustomizemenubutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdatarecovery.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdbcs.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdesktopalertdialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdesktopalertwnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdialogex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdialogimpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdockablepane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdockablepaneadapter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdockingmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdockingpanesrow.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdocksite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdragframeimpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdrawmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdropdownlistbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxdropdowntoolbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxeditbrowsectrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxfontcombobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxframeimpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxframewndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxfullscreenimpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxglobals.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxglobalutils.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxheaderctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afximageeditordialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afximagepaintarea.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxinl1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxinl2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxinl3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxinl4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxjumplist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxkeyboardmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxkeymapdialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxlinkctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxlistctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmaskededit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmdichildwndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmdiclientareawnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmdiframewndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmenubar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmenubutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmenuhash.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmenuimages.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmenutearoffmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmousemanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmousepropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxmultipaneframewnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxolecntrframewndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoledocipframewndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoleipframewndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoleserverdocex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoutlookbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoutlookbarpane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoutlookbarpaneadapter.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoutlookbarpanebutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxoutlookbartabctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpanecontainer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpanecontainermanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpanedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpanedivider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpaneframewnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpopupmenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpopupmenubar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpreviewviewex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpropertygridctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpropertygridtooltipctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxpropertysheet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxrebar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxrebarstate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxrecentdocksiteinfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxregpath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxrendertarget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonbuttonsgroup.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboncategory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboncheckbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboncollector.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboncolorbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboncombobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboncommandslistbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonconstructor.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboncustomizedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonedit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboninfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboninfo2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribboninfoloader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonkeyboardcustomizedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonkeytip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonlabel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonlinkctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonmainpanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonminitoolbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonpalettegallery.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonpanel.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonpanelmenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonprogressbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonquickaccesstoolbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonslider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonstatusbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonstatusbarpane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxribbonundobutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxrichpreviewctrlimpl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxsettingsstore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxshelllistctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxshellmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxshelltreectrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxshowallbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxsmartdockingguide.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxsmartdockinghighlighterwnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxsmartdockingmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxsound.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxspinbuttonctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxsplitterwndex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxstandardcolorspropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxstate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxstatusbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtabbedpane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtabctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtabview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtagmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtaskdialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtaskspane.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtaskspaneframewnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtls.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarbuttoncustomizedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarbuttonslistbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarcomboboxbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbardatetimectrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbardropsource.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbardroptarget.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbareditboxbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarfontcombobox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarimages.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarmenubutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarmenubuttonsbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarnamedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarscommandslistbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarscustomizedialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarskeyboardpropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarslistcheckbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarslistpropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarsmenupropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarsoptionspropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarspineditboxbutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarstoolspropertypage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtoolbarsystemmenubutton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtooltipctrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtooltipmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxtrace.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxusertool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxusertoolsmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanageroffice2003.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanageroffice2007.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanagerofficexp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanagervs2005.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanagervs2008.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanagerwindows.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvisualmanagerwindows7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxvslistbox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxwfrminl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxwinappex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxwindowsmanagerdialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="afxwinverapi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appdlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="apphelp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="apphelpx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appinit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appmodul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appprnt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appterm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appui.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appui1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appui2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="appui3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="arccore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="arcex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="arcobj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="arcstrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array_b.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array_d.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array_o.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array_p.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array_s.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array_u.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="array_w.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="auxdata.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="barcool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="barcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bardlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bardock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="barstat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="bartool.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ccdata.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="cmdtarg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlcache.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlconn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctldata.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlevent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlfont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlframe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlinl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlinplc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctllic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlmodul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlnownd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlobj.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlpbag.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlpict.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlppg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlprop.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlpropx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlpset.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlpstg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlpstm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlquick.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlrefl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlreg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctltrack.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ctlview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="daocore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="daodfx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="daoview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dbcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dbflt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dblong.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dbrfx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dbvar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dbview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dcmeta.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dcprev.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgclr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgcomm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgdata.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgdhtml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgfile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgfloat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgfnt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgfr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgprnt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgprntx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgprop.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dlgtempl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllinit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmodul.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="doccore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dockcont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dockstat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="docmapi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="docmgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="docmulti.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="docsingl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="doctempl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dumpcont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dumpflt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dumpinit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dumpout.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="dumpstak.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="except.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filecore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filefind.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filelist.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filemem.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fileshrd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filest.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filetxt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="filex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="fixalloc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inet.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inetcall.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="list_o.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="list_p.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="list_s.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map_pp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map_pw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map_so.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map_sp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map_ss.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map_wo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="map_wp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mfcm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mfcm80.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mtcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="mtex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="nolib.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="objcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occcont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occddx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occddxf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occdlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occevent.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occlock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occmgr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="occsite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleasmon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olebar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olecall.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olecli1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olecli2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olecli3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olecnvrt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleconn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledata.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledisp1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledisp2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledlgs1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledlgs2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledlgs3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledll.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledobj1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledobj2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledoc1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledoc2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledoccl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledocip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledocob.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledoctg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledocvw.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledrop1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oledrop2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleenum.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleexp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olefact.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleinit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleipfrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olelink.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olelock.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olemisc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olemon.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olemsgf.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olepset.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olereg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olestrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olesvr1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olesvr2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oletsvr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oletyplb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleui1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleui2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleunk.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olevar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="olevar1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="oleverb.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="plex.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="postdllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="postrawdllmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sockcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="sockexp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="strcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="thrdcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="timecore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="tooltip.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="trckrect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="validadd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewcmn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewcore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewedit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewhtml.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewoled.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewprev.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewprnt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewrich.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="viewscrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfrmcmd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfrmsite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wfrmview.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winbtn.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wincore.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wincore2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl5.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl6.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl7.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winctrl8.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winfrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winfrm2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winfrmx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wingdi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="wingdix.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winhand.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winmain.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winmdi.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winmenu.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winmini.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winocc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winsplit.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winstr.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="winutil.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

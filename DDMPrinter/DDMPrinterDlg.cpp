@@ -99,7 +99,7 @@ BOOL CDDMPrinterDlg::OnInitDialog()
 
 
 	//m_PWnd.CreateEx(WS_CHILD | WS_VISIBLE, NULL, L"paper", NULL, CRect(30, 30, 500, 500), this, 201709);
-
+	m_PWnd.CreateEx(WS_EX_MDICHILD, L"", L"ahh", WS_CHILD | WS_VISIBLE, CRect(30, 30, 500, 500), this, 201709);
 	// TODO:  在此添加额外的初始化代码
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -126,7 +126,7 @@ void CDDMPrinterDlg::OnPaint()
 {
 
 		CPaintDC dc(this); // 用于绘制的设备上下文
-		CRect   rect;
+		/*CRect   rect;
 		GetClientRect(rect);
 		dc.FillSolidRect(rect, RGB(229, 233,237));
 
@@ -134,7 +134,7 @@ void CDDMPrinterDlg::OnPaint()
 		dc.Rectangle(rect2);
 		
 		CBrush brush(HS_HORIZONTAL, RGB(150,150,150));
-		dc.FrameRect(rect2,&brush);
+		dc.FrameRect(rect2,&brush);*/
 		//dc.SelectObject(CBrush(RGB(255, 125, 20)));
 		//dc.Rectangle(30, 30, 500, 500);
 
