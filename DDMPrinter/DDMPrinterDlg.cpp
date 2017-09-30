@@ -95,9 +95,11 @@ BOOL CDDMPrinterDlg::OnInitDialog()
 	//  执行此操作
 	SetIcon(m_hIcon, TRUE);			// 设置大图标
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
-
 	ShowWindow(SW_MAXIMIZE);
 
+
+	//m_PWnd.CreateEx(WS_CHILD | WS_VISIBLE, NULL, L"paper", NULL, CRect(30, 30, 500, 500), this, 201709);
+	m_PWnd.CreateEx(WS_EX_MDICHILD, L"", L"ahh", WS_CHILD | WS_VISIBLE, CRect(30, 30, 500, 500), this, 201709);
 	// TODO:  在此添加额外的初始化代码
 
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
@@ -122,27 +124,20 @@ void CDDMPrinterDlg::OnSysCommand(UINT nID, LPARAM lParam)
 
 void CDDMPrinterDlg::OnPaint()
 {
-	if (IsIconic())
-	{
+
 		CPaintDC dc(this); // 用于绘制的设备上下文
+		/*CRect   rect;
+		GetClientRect(rect);
+		dc.FillSolidRect(rect, RGB(229, 233,237));
 
-		SendMessage(WM_ICONERASEBKGND, reinterpret_cast<WPARAM>(dc.GetSafeHdc()), 0);
+		CRect rect2(30, 30, 500, 500);
+		dc.Rectangle(rect2);
+		
+		CBrush brush(HS_HORIZONTAL, RGB(150,150,150));
+		dc.FrameRect(rect2,&brush);*/
+		//dc.SelectObject(CBrush(RGB(255, 125, 20)));
+		//dc.Rectangle(30, 30, 500, 500);
 
-		// 使图标在工作区矩形中居中
-		int cxIcon = GetSystemMetrics(SM_CXICON);
-		int cyIcon = GetSystemMetrics(SM_CYICON);
-		CRect rect;
-		GetClientRect(&rect);
-		int x = (rect.Width() - cxIcon + 1) / 2;
-		int y = (rect.Height() - cyIcon + 1) / 2;
-
-		// 绘制图标
-		dc.DrawIcon(x, y, m_hIcon);
-	}
-	else
-	{
-		CDialogEx::OnPaint();
-	}
 }
 
 //当用户拖动最小化窗口时系统调用此函数取得光标

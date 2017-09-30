@@ -18,6 +18,7 @@
 #endif
 
 
+
 // CDDMView
 
 IMPLEMENT_DYNCREATE(CDDMView, CView)
