@@ -81,7 +81,7 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 	CWnd* pMainWnd = GetParentFrame();//获取主窗口指针
 	if (DYNAMIC_DOWNCAST(CFrameWnd, pMainWnd) == NULL)
 	{
-		// if it's not a frame, we'll try the main window
+		// 如何他不是一个窗口就获取主窗口的指针
 		pMainWnd = AfxGetMainWnd();
 	}
 
