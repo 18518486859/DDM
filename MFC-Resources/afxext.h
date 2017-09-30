@@ -1134,10 +1134,10 @@ struct CPrintInfo // Printing information structure
 	UINT GetOffsetPage() const;
 };
 
-struct CPrintPreviewState   // Print Preview context/state
+struct CPrintPreviewState   // 打印预览上下文数据
 {
-	UINT nIDMainPane;          // main pane ID to hide
-	HMENU hMenu;               // saved hMenu
+	UINT nIDMainPane;          // main pane ID to hide主窗口ID
+	HMENU hMenu;               // saved hMenu保存的主菜单
 	DWORD dwStates;            // Control Bar Visible states (bit map)
 	CView* pViewActiveOld;     // save old active view during preview
 	BOOL (CALLBACK* lpfnCloseProc)(CFrameWnd* pFrameWnd);

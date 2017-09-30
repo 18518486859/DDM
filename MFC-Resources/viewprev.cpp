@@ -36,10 +36,10 @@ CPrintPreviewState::CPrintPreviewState()
 
 void CView::OnFilePrintPreview()
 {
-	// In derived classes, implement special window handling here
-	// Be sure to Unhook Frame Window close if hooked.
+	//在派生类中 , 实现特殊的窗口处理
+	//如果实现的话，一定要把主窗口关闭。
 
-	// must not create this on the frame.  Must outlive this function
+	// 预览不能在主窗口创建.  必须要比这个函数的生命周期长
 	CPrintPreviewState* pState = new CPrintPreviewState;
 
 	TRY
