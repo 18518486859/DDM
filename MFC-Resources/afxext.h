@@ -1136,12 +1136,12 @@ struct CPrintInfo // Printing information structure
 
 struct CPrintPreviewState   // 打印预览上下文数据
 {
-	UINT nIDMainPane;          // main pane ID to hide主窗口ID
-	HMENU hMenu;               // saved hMenu保存的主菜单
-	DWORD dwStates;            // Control Bar Visible states (bit map)
-	CView* pViewActiveOld;     // save old active view during preview
+	UINT nIDMainPane;          // 将要隐藏的主窗口ID
+	HMENU hMenu;               // 保存一个菜单栏句柄
+	DWORD dwStates;            // 控制栏可见状态(位图)
+	CView* pViewActiveOld;     // 在预览时保存旧的活动视图
 	BOOL (CALLBACK* lpfnCloseProc)(CFrameWnd* pFrameWnd);
-	HACCEL hAccelTable;       // saved accelerator table
+	HACCEL hAccelTable;       // 保存加速器表
 
 // Implementation
 	CPrintPreviewState();
