@@ -78,22 +78,26 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 	ASSERT(pPreviewViewClass->IsDerivedFrom(RUNTIME_CLASS(CPreviewView)));
 	ASSERT(pState != NULL);
 
-	CWnd* pMainWnd = GetParentFrame();//获取主窗口指针
+	//获取父框架窗口指针			
+	CWnd* pMainWnd = GetParentFrame();
+
+	//如果pMainWnd对应于CFrameWnd类，则返回pMainWnd，否则为NULL
 	if (DYNAMIC_DOWNCAST(CFrameWnd, pMainWnd) == NULL)
 	{
-		// 如何他不是一个窗口就获取主窗口的指针
+		//获取主窗口的指针
 		pMainWnd = AfxGetMainWnd();
 	}
-
+	//将指针pMainWnd转换成CFrameWnd类型
 	CFrameWnd* pParent = STATIC_DOWNCAST(CFrameWnd, pMainWnd);
 	ASSERT_VALID(pParent);
 
+	//创建一个CCreateContext结构体
 	CCreateContext context;
 	context.m_pCurrentFrame = pParent;
 	context.m_pCurrentDoc = GetDocument();
 	context.m_pLastView = this;
 
-	// Create the preview view object
+	// 创建一个CPreviewView对像
 	CPreviewView* pView = (CPreviewView*)pPreviewViewClass->CreateObject();
 	if (pView == NULL)
 	{
@@ -101,13 +105,15 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 		return FALSE;
 	}
 	ASSERT_KINDOF(CPreviewView, pView);
-	pView->m_pPreviewState = pState;        // save pointer
+	pView->m_pPreviewState = pState;        // 保存指针
 
-	pParent->OnSetPreviewMode(TRUE, pState);    // Take over Frame Window
+	//调用此成员函数设置应用的主框架窗口是预打印模式。接管框架窗口
+	pParent->OnSetPreviewMode(TRUE, pState);
 
-	// Create the toolbar from the dialog resource
+	// 从对话框资源创建工具栏
 	pView->m_pToolBar = new CDialogBar;
 
+	//获取一个指向MDI框架窗口的活动多文档界面（MDI）子窗口的指针。
 	CFrameWnd *pParentFrame = pParent->GetActiveFrame();
 	ASSERT(pParentFrame);
 
@@ -205,7 +211,7 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 		return FALSE;
 	}
 
-	// Preview window shown now
+	// 现在显示预览窗口
 	pState->pViewActiveOld = pParent->GetActiveView();
 	CView* pActiveView = pParent->GetActiveFrame()->GetActiveView();
 
