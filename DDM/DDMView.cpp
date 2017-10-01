@@ -1,10 +1,10 @@
 
-// DDMView.cpp : CDDMView ÀàµÄÊµÏÖ
+// DDMView.cpp : CDDMView ç±»çš„å®ç°
 //
 
 #include "stdafx.h"
-// SHARED_HANDLERS ¿ÉÒÔÔÚÊµÏÖÔ¤ÀÀ¡¢ËõÂÔÍ¼ºÍËÑË÷É¸Ñ¡Æ÷¾ä±úµÄ
-// ATL ÏîÄ¿ÖĞ½øĞĞ¶¨Òå£¬²¢ÔÊĞíÓë¸ÃÏîÄ¿¹²ÏíÎÄµµ´úÂë¡£
+// SHARED_HANDLERS å¯ä»¥åœ¨å®ç°é¢„è§ˆã€ç¼©ç•¥å›¾å’Œæœç´¢ç­›é€‰å™¨å¥æŸ„çš„
+// ATL é¡¹ç›®ä¸­è¿›è¡Œå®šä¹‰ï¼Œå¹¶å…è®¸ä¸è¯¥é¡¹ç›®å…±äº«æ–‡æ¡£ä»£ç ã€‚
 #ifndef SHARED_HANDLERS
 #include "DDM.h"
 #endif
@@ -23,18 +23,18 @@
 IMPLEMENT_DYNCREATE(CDDMView, CView)
 
 BEGIN_MESSAGE_MAP(CDDMView, CView)
-	// ±ê×¼´òÓ¡ÃüÁî
+	// æ ‡å‡†æ‰“å°å‘½ä»¤
 	ON_COMMAND(ID_FILE_PRINT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_DIRECT, &CView::OnFilePrint)
 	ON_COMMAND(ID_FILE_PRINT_PREVIEW, &CView::OnFilePrintPreview)
 	ON_NOTIFY(TCN_SELCHANGE, IDT_DDMTAB, &CDDMView::OnTcnSelchangeTab1)
 	ON_WM_SIZE()
 END_MESSAGE_MAP()
-// CDDMView ¹¹Ôì/Îö¹¹
+// CDDMView æ„é€ /ææ„
 
 CDDMView::CDDMView()
 {
-	// TODO:  ÔÚ´Ë´¦Ìí¼Ó¹¹Ôì´úÂë
+	// TODO:  åœ¨æ­¤å¤„æ·»åŠ æ„é€ ä»£ç 
 	i = 0;
 }
 
@@ -46,13 +46,13 @@ CDDMView::~CDDMView()
 
 BOOL CDDMView::PreCreateWindow(CREATESTRUCT& cs)
 {
-	// TODO:  ÔÚ´Ë´¦Í¨¹ıĞŞ¸Ä
-	//  CREATESTRUCT cs À´ĞŞ¸Ä´°¿ÚÀà»òÑùÊ½
+	// TODO:  åœ¨æ­¤å¤„é€šè¿‡ä¿®æ”¹
+	//  CREATESTRUCT cs æ¥ä¿®æ”¹çª—å£ç±»æˆ–æ ·å¼
 
 	return CView::PreCreateWindow(cs);
 }
 
-// CDDMView »æÖÆ
+// CDDMView ç»˜åˆ¶
 
 void CDDMView::OnDraw(CDC* pDC)
 {
@@ -65,7 +65,7 @@ void CDDMView::OnDraw(CDC* pDC)
 }
 
 
-// CDDMView ´òÓ¡
+// CDDMView æ‰“å°
 
 BOOL CDDMView::OnPreparePrinting(CPrintInfo* pInfo)
 {
@@ -80,11 +80,11 @@ void CDDMView::OnBeginPrinting(CDC* pDC, CPrintInfo* pInfo)
 
 void CDDMView::OnEndPrinting(CDC* /*pDC*/, CPrintInfo* /*pInfo*/)
 {
-	// TODO:  Ìí¼Ó´òÓ¡ºó½øĞĞµÄÇåÀí¹ı³Ì
+	// TODO:  æ·»åŠ æ‰“å°åè¿›è¡Œçš„æ¸…ç†è¿‡ç¨‹
 }
 
 
-// CDDMView Õï¶Ï
+// CDDMView è¯Šæ–­
 
 #ifdef _DEBUG
 void CDDMView::AssertValid() const
@@ -97,7 +97,7 @@ void CDDMView::Dump(CDumpContext& dc) const
 	CView::Dump(dc);
 }
 
-CDDMDoc* CDDMView::GetDocument() const // ·Çµ÷ÊÔ°æ±¾ÊÇÄÚÁªµÄ
+CDDMDoc* CDDMView::GetDocument() const // éè°ƒè¯•ç‰ˆæœ¬æ˜¯å†…è”çš„
 {
 	ASSERT(m_pDocument->IsKindOf(RUNTIME_CLASS(CDDMDoc)));
 	return (CDDMDoc*)m_pDocument;
@@ -105,15 +105,15 @@ CDDMDoc* CDDMView::GetDocument() const // ·Çµ÷ÊÔ°æ±¾ÊÇÄÚÁªµÄ
 #endif //_DEBUG
 
 
-// CDDMView ÏûÏ¢´¦Àí³ÌĞò
+// CDDMView æ¶ˆæ¯å¤„ç†ç¨‹åº
 
 
 void CDDMView::OnInitialUpdate()
 {
 	CView::OnInitialUpdate();
-	//³õÊ¼»¯Êı¾İ¿â
+	//åˆå§‹åŒ–æ•°æ®åº“
 	if (!ADOInit()){
-		AfxMessageBox(L"Êı¾İ¿â³õÊ¼»¯Ê§°Ü£¡");	
+		AfxMessageBox(L"æ•°æ®åº“åˆå§‹åŒ–å¤±è´¥ï¼");	
 	}
 
 	CRect rect;
@@ -122,7 +122,7 @@ void CDDMView::OnInitialUpdate()
 	rect.left += 3;
 	rect.bottom -= 3;
 	m_Tab.Create(WS_CHILD | WS_VISIBLE | TCS_BUTTONS, rect, this, IDT_DDMTAB);
-	m_Tab.InsertItem(0, L"µ¼º½Í¼");
+	m_Tab.InsertItem(0, L"å¯¼èˆªå›¾");
 
 	m_Nav.Create(IDD_NAVIGETION_DLG, &m_Tab);
 	rect.top += 40;
@@ -175,7 +175,7 @@ void CDDMView::OnSize(UINT nType, int cx, int cy)
 		rect.bottom -= 3;
 		m_Tab.MoveWindow(rect);
 	}	
-	if (i>1){     //µÚÒ»´Îµ÷ÓÃ´Ë´¦´úÂë»áÒì³£
+	if (i>1){     //ç¬¬ä¸€æ¬¡è°ƒç”¨æ­¤å¤„ä»£ç ä¼šå¼‚å¸¸
 			GetClientRect(rect);
 			rect.top += 25;
 			rect.right -= 3;
@@ -191,19 +191,19 @@ void CDDMView::OnSize(UINT nType, int cx, int cy)
 
 BOOL CDDMView::ADOInit()
 {
-	::WritePrivateProfileStringW(_T("DDM"), _T("HAIMING"), _T("Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Ddm2017;Data Source=HAIMING;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=HAIMING;Use Encryption for Data=False;Tag with column collation when possible=False"), _T(".\\DDM.ini"));//Ğ´Èë×Ö·û´®
-	::WritePrivateProfileStringW(_T("DDM"), _T("DMA"), _T("Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=DDM;Data Source=DMA\\DDM;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DMA;Use Encryption for Data=False;Tag with column collation when possible=False;"), _T(".\\DDM.ini"));//Ğ´Èë×Ö·û´®
+	::WritePrivateProfileStringW(_T("DDM"), _T("HAIMING"), _T("Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Ddm2017;Data Source=HAIMING;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=HAIMING;Use Encryption for Data=False;Tag with column collation when possible=False"), _T(".\\DDM.ini"));//å†™å…¥å­—ç¬¦ä¸²
+	::WritePrivateProfileStringW(_T("DDM"), _T("DMA"), _T("Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=DDM;Data Source=DMA\\DDM;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=DMA;Use Encryption for Data=False;Tag with column collation when possible=False;"), _T(".\\DDM.ini"));//å†™å…¥å­—ç¬¦ä¸²
 	try{
 		CString strBasedata;
 		DWORD d = 32;
 		TCHAR strHostName[64];
 		GetComputerNameW(strHostName, &d);
 		if (CString(strHostName) == "HAIMING"){
-			::GetPrivateProfileString(_T("DDM"), _T("HAIMING"), _T("Ã»ÓĞÕÒµ½ÕıÈ·µÄÅäÖÃÎÄ¼ş"), strBasedata.GetBuffer(MAX_PATH), MAX_PATH, _T(".\\DDM.ini"));
+			::GetPrivateProfileString(_T("DDM"), _T("HAIMING"), _T("æ²¡æœ‰æ‰¾åˆ°æ­£ç¡®çš„é…ç½®æ–‡ä»¶"), strBasedata.GetBuffer(MAX_PATH), MAX_PATH, _T(".\\DDM.ini"));
 			strBasedata.ReleaseBuffer();
 		}
 		else if (CString(strHostName) == L"DMA"){
-			::GetPrivateProfileString(_T("DDM"), _T("DMA"), _T("Ã»ÓĞÕÒµ½ÕıÈ·µÄÅäÖÃÎÄ¼ş"), strBasedata.GetBuffer(MAX_PATH), MAX_PATH, _T(".\\DDM.ini"));
+			::GetPrivateProfileString(_T("DDM"), _T("DMA"), _T("æ²¡æœ‰æ‰¾åˆ°æ­£ç¡®çš„é…ç½®æ–‡ä»¶"), strBasedata.GetBuffer(MAX_PATH), MAX_PATH, _T(".\\DDM.ini"));
 			strBasedata.ReleaseBuffer();
 		}
 		//AfxMessageBox(LPCTSTR(strBasedata));
@@ -211,7 +211,7 @@ BOOL CDDMView::ADOInit()
 		m_pConnection = _ConnectionPtr(__uuidof(Connection));
 		m_pConnection->ConnectionString = LPCTSTR(strBasedata);//L"Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=Ddm2017;Data Source=HAIMING;Use Procedure for Prepare=1;Auto Translate=True;Packet Size=4096;Workstation ID=HAIMING;Use Encryption for Data=False;Tag with column collation when possible=False";
 		m_pConnection->Open("", "", "", adConnectUnspecified);
-		AfxMessageBox(_T("Êı¾İ¿âÁ¬½Ó³É¹¦£¡"));
+		AfxMessageBox(_T("æ•°æ®åº“è¿æ¥æˆåŠŸï¼"));
 	}
 	catch (_com_error e){
 		e.Description();
