@@ -124,7 +124,8 @@
 // OLE stuff for clipboard operations
 #include <afxadv.h>            // For CSharedFile
 #include <afxconv.h>           // For LPTSTR -> LPSTR macros
-#include "\workspace\DDM\DDM\resource.h"
+#include "../resource.h"
+
 #ifdef _DEBUG
 #define new DEBUG_NEW
 #undef THIS_FILE
@@ -6383,7 +6384,7 @@ void CGridCtrl::OnLButtonUp(UINT nFlags, CPoint point)
 {
     // TRACE0("CGridCtrl::OnLButtonUp\n");
 
-    CWnd::OnLButtonUp(nFlags, point);
+    //CWnd::OnLButtonUp(nFlags, point);
 
     m_bLMouseButtonDown = FALSE;
 

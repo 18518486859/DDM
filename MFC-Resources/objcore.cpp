@@ -49,7 +49,8 @@ BOOL CObject::IsKindOf(const CRuntimeClass* pClass) const
 }
 
 CObject* AFX_CDECL AfxDynamicDownCast(CRuntimeClass* pClass, CObject* pObject)
-{
+{	
+	//IsKindOf(pClass)如果对象对应于该类，则返回非零值，否则为0。
 	if (pObject != NULL && pObject->IsKindOf(pClass))
 		return pObject;
 	else
