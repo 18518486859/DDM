@@ -97,11 +97,11 @@ BOOL CDDMPrinterDlg::OnInitDialog()
 	SetIcon(m_hIcon, FALSE);		// 设置小图标
 	ShowWindow(SW_MAXIMIZE);
 
-
+#define RUNTIME_CLASS(CPreviewView) (CPreviewView::GetThisClass())
 	//m_PWnd.CreateEx(WS_CHILD | WS_VISIBLE, NULL, L"paper", NULL, CRect(30, 30, 500, 500), this, 201709);
-
+	//m_PWnd.CreateEx(WS_EX_MDICHILD, L"", L"ahh", WS_CHILD | WS_VISIBLE, CRect(30, 30, 500, 500), this, 201709);
 	// TODO:  在此添加额外的初始化代码
-
+	
 	return TRUE;  // 除非将焦点设置到控件，否则返回 TRUE
 }
 
@@ -126,17 +126,17 @@ void CDDMPrinterDlg::OnPaint()
 {
 
 		CPaintDC dc(this); // 用于绘制的设备上下文
-		int pageWidth = 21000;
-		int pageHeight = -29700;
-		CRect rect;
-		dc.SetMapMode(MM_HIMETRIC);
+		/*CRect   rect;
 		GetClientRect(rect);
-		dc.DPtoLP(rect);
-		int leftL = (rect.right - pageWidth) / 2;
-		
+		dc.FillSolidRect(rect, RGB(229, 233,237));
 
-		dc.SelectObject(CBrush(RGB(255, 125, 20)));
-		dc.Rectangle(leftL, -3000, pageWidth+leftL, pageHeight-3000);
+		CRect rect2(30, 30, 500, 500);
+		dc.Rectangle(rect2);
+		
+		CBrush brush(HS_HORIZONTAL, RGB(150,150,150));
+		dc.FrameRect(rect2,&brush);*/
+		//dc.SelectObject(CBrush(RGB(255, 125, 20)));
+		//dc.Rectangle(30, 30, 500, 500);
 
 }
 

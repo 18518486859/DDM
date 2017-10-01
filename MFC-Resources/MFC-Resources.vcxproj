@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{5A63FC8C-492D-4D57-86D4-7A49919DA947}</ProjectGuid>
+    <RootNamespace>MFCResources</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="afx.h" />
+    <ClInclude Include="afxacceleratorkey.h" />
+    <ClInclude Include="afxacceleratorkeyassignctrl.h" />
+    <ClInclude Include="afxaccessibility.h" />
+    <ClInclude Include="afxadv.h" />
+    <ClInclude Include="afxanimationcontroller.h" />
+    <ClInclude Include="afxanimationhelper.h" />
+    <ClInclude Include="afxautohidebar.h" />
+    <ClInclude Include="afxautohidebutton.h" />
+    <ClInclude Include="afxautohidedocksite.h" />
+    <ClInclude Include="afxbasepane.h" />
+    <ClInclude Include="afxbaseribbonelement.h" />
+    <ClInclude Include="afxbasetabbedpane.h" />
+    <ClInclude Include="afxbasetabctrl.h" />
+    <ClInclude Include="afxbasetoolbar.h" />
+    <ClInclude Include="afxbutton.h" />
+    <ClInclude Include="afxcaptionbar.h" />
+    <ClInclude Include="afxcaptionbutton.h" />
+    <ClInclude Include="afxcaptionmenubutton.h" />
+    <ClInclude Include="afxcmdusagecount.h" />
+    <ClInclude Include="afxcmn.h" />
+    <ClInclude Include="afxcoll.h" />
+    <ClInclude Include="afxcolorbar.h" />
+    <ClInclude Include="afxcolorbutton.h" />
+    <ClInclude Include="afxcolordialog.h" />
+    <ClInclude Include="afxcolormenubutton.h" />
+    <ClInclude Include="afxcolorpickerctrl.h" />
+    <ClInclude Include="afxcolorpopupmenu.h" />
+    <ClInclude Include="afxcolorpropertysheet.h" />
+    <ClInclude Include="afxcommandmanager.h" />
+    <ClInclude Include="afxcom_.h" />
+    <ClInclude Include="afxcontextmenumanager.h" />
+    <ClInclude Include="afxcontrolbarimpl.h" />
+    <ClInclude Include="afxcontrolbars.h" />
+    <ClInclude Include="afxcontrolbarutil.h" />
+    <ClInclude Include="afxcontrolrenderer.h" />
+    <ClInclude Include="afxconv.h" />
+    <ClInclude Include="afxctl.h" />
+    <ClInclude Include="afxctrlcontainer.h" />
+    <ClInclude Include="afxcustomcolorspropertypage.h" />
+    <ClInclude Include="afxcustomizebutton.h" />
+    <ClInclude Include="afxcustomizemenubutton.h" />
+    <ClInclude Include="afxcview.h" />
+    <ClInclude Include="afxdao.h" />
+    <ClInclude Include="afxdatarecovery.h" />
+    <ClInclude Include="afxdb.h" />
+    <ClInclude Include="afxdb_.h" />
+    <ClInclude Include="afxdd_.h" />
+    <ClInclude Include="afxdesktopalertdialog.h" />
+    <ClInclude Include="afxdesktopalertwnd.h" />
+    <ClInclude Include="afxdhtml.h" />
+    <ClInclude Include="afxdialogex.h" />
+    <ClInclude Include="afxdialogimpl.h" />
+    <ClInclude Include="afxdisp.h" />
+    <ClInclude Include="afxdlgs.h" />
+    <ClInclude Include="afxdllx.h" />
+    <ClInclude Include="afxdll_.h" />
+    <ClInclude Include="afxdockablepane.h" />
+    <ClInclude Include="afxdockablepaneadapter.h" />
+    <ClInclude Include="afxdockingmanager.h" />
+    <ClInclude Include="afxdockingpanesrow.h" />
+    <ClInclude Include="afxdocksite.h" />
+    <ClInclude Include="afxdocob.h" />
+    <ClInclude Include="afxdragframeimpl.h" />
+    <ClInclude Include="afxdrawmanager.h" />
+    <ClInclude Include="afxdropdownlistbox.h" />
+    <ClInclude Include="afxdropdowntoolbar.h" />
+    <ClInclude Include="afxdtctl.h" />
+    <ClInclude Include="afxeditbrowsectrl.h" />
+    <ClInclude Include="afxext.h" />
+    <ClInclude Include="afxfontcombobox.h" />
+    <ClInclude Include="afxframeimpl.h" />
+    <ClInclude Include="afxframewndex.h" />
+    <ClInclude Include="afxfullscreenimpl.h" />
+    <ClInclude Include="afxglobals.h" />
+    <ClInclude Include="afxglobalutils.h" />
+    <ClInclude Include="afxheaderctrl.h" />
+    <ClInclude Include="afxhh.h" />
+    <ClInclude Include="afxhtml.h" />
+    <ClInclude Include="afximageeditordialog.h" />
+    <ClInclude Include="afximagepaintarea.h" />
+    <ClInclude Include="afximpl.h" />
+    <ClInclude Include="afxinet.h" />
+    <ClInclude Include="afxkeyboardmanager.h" />
+    <ClInclude Include="afxkeymapdialog.h" />
+    <ClInclude Include="afxlinkctrl.h" />
+    <ClInclude Include="afxlistctrl.h" />
+    <ClInclude Include="afxmaskededit.h" />
+    <ClInclude Include="afxmdichildwndex.h" />
+    <ClInclude Include="afxmdiclientareawnd.h" />
+    <ClInclude Include="afxmdiframewndex.h" />
+    <ClInclude Include="afxmenubar.h" />
+    <ClInclude Include="afxmenubutton.h" />
+    <ClInclude Include="afxmenuhash.h" />
+    <ClInclude Include="afxmenuimages.h" />
+    <ClInclude Include="afxmenutearoffmanager.h" />
+    <ClInclude Include="afxmousemanager.h" />
+    <ClInclude Include="afxmousepropertypage.h" />
+    <ClInclude Include="afxmsg_.h" />
+    <ClInclude Include="afxmt.h" />
+    <ClInclude Include="afxmultidoctemplateex.h" />
+    <ClInclude Include="afxmultipaneframewnd.h" />
+    <ClInclude Include="afxocc.h" />
+    <ClInclude Include="afxodlgs.h" />
+    <ClInclude Include="afxole.h" />
+    <ClInclude Include="afxolecntrframewndex.h" />
+    <ClInclude Include="afxoledb.h" />
+    <ClInclude Include="afxoledocipframewndex.h" />
+    <ClInclude Include="afxoleipframewndex.h" />
+    <ClInclude Include="afxoleserverdocex.h" />
+    <ClInclude Include="afxoutlookbar.h" />
+    <ClInclude Include="afxoutlookbarpane.h" />
+    <ClInclude Include="afxoutlookbarpaneadapter.h" />
+    <ClInclude Include="afxoutlookbarpanebutton.h" />
+    <ClInclude Include="afxoutlookbartabctrl.h" />
+    <ClInclude Include="afxpane.h" />
+    <ClInclude Include="afxpanecontainer.h" />
+    <ClInclude Include="afxpanecontainermanager.h" />
+    <ClInclude Include="afxpanedialog.h" />
+    <ClInclude Include="afxpanedivider.h" />
+    <ClInclude Include="afxpaneframewnd.h" />
+    <ClInclude Include="afxplex_.h" />
+    <ClInclude Include="afxpopupmenu.h" />
+    <ClInclude Include="afxpopupmenubar.h" />
+    <ClInclude Include="afxpreviewviewex.h" />
+    <ClInclude Include="afxpriv.h" />
+    <ClInclude Include="afxpriv2.h" />
+    <ClInclude Include="afxpropertygridctrl.h" />
+    <ClInclude Include="afxpropertygridtooltipctrl.h" />
+    <ClInclude Include="afxpropertypage.h" />
+    <ClInclude Include="afxpropertysheet.h" />
+    <ClInclude Include="afxrebar.h" />
+    <ClInclude Include="afxrebarstate.h" />
+    <ClInclude Include="afxrecentdocksiteinfo.h" />
+    <ClInclude Include="afxregpath.h" />
+    <ClInclude Include="afxrendertarget.h" />
+    <ClInclude Include="afxres.h" />
+    <ClInclude Include="afxribbonbar.h" />
+    <ClInclude Include="afxribbonbutton.h" />
+    <ClInclude Include="afxribbonbuttonsgroup.h" />
+    <ClInclude Include="afxribboncategory.h" />
+    <ClInclude Include="afxribboncheckbox.h" />
+    <ClInclude Include="afxribboncollector.h" />
+    <ClInclude Include="afxribboncolorbutton.h" />
+    <ClInclude Include="afxribboncombobox.h" />
+    <ClInclude Include="afxribboncommandslistbox.h" />
+    <ClInclude Include="afxribbonconstructor.h" />
+    <ClInclude Include="afxribboncustomizedialog.h" />
+    <ClInclude Include="afxribbonedit.h" />
+    <ClInclude Include="afxribboninfo.h" />
+    <ClInclude Include="afxribboninfoloader.h" />
+    <ClInclude Include="afxribbonkeyboardcustomizedialog.h" />
+    <ClInclude Include="afxribbonkeytip.h" />
+    <ClInclude Include="afxribbonlabel.h" />
+    <ClInclude Include="afxribbonlinkctrl.h" />
+    <ClInclude Include="afxribbonmainpanel.h" />
+    <ClInclude Include="afxribbonminitoolbar.h" />
+    <ClInclude Include="afxribbonpalettegallery.h" />
+    <ClInclude Include="afxribbonpanel.h" />
+    <ClInclude Include="afxribbonpanelmenu.h" />
+    <ClInclude Include="afxribbonprogressbar.h" />
+    <ClInclude Include="afxribbonquickaccesstoolbar.h" />
+    <ClInclude Include="afxribbonres.h" />
+    <ClInclude Include="afxribbonslider.h" />
+    <ClInclude Include="afxribbonstatusbar.h" />
+    <ClInclude Include="afxribbonstatusbarpane.h" />
+    <ClInclude Include="afxribbonundobutton.h" />
+    <ClInclude Include="afxrich.h" />
+    <ClInclude Include="afxsettingsstore.h" />
+    <ClInclude Include="afxshelllistctrl.h" />
+    <ClInclude Include="afxshellmanager.h" />
+    <ClInclude Include="afxshelltreectrl.h" />
+    <ClInclude Include="afxshowallbutton.h" />
+    <ClInclude Include="afxsmartdockingguide.h" />
+    <ClInclude Include="afxsmartdockinghighlighterwnd.h" />
+    <ClInclude Include="afxsmartdockingmanager.h" />
+    <ClInclude Include="afxsock.h" />
+    <ClInclude Include="afxsound.h" />
+    <ClInclude Include="afxspinbuttonctrl.h" />
+    <ClInclude Include="afxsplitterwndex.h" />
+    <ClInclude Include="afxstandardcolorspropertypage.h" />
+    <ClInclude Include="afxstatusbar.h" />
+    <ClInclude Include="afxstat_.h" />
+    <ClInclude Include="afxstr.h" />
+    <ClInclude Include="afxtabbedpane.h" />
+    <ClInclude Include="afxtabctrl.h" />
+    <ClInclude Include="afxtabview.h" />
+    <ClInclude Include="afxtagmanager.h" />
+    <ClInclude Include="afxtaskdialog.h" />
+    <ClInclude Include="afxtaskspane.h" />
+    <ClInclude Include="afxtaskspaneframewnd.h" />
+    <ClInclude Include="afxtempl.h" />
+    <ClInclude Include="afxtls_.h" />
+    <ClInclude Include="afxtoolbar.h" />
+    <ClInclude Include="afxtoolbarbutton.h" />
+    <ClInclude Include="afxtoolbarbuttoncustomizedialog.h" />
+    <ClInclude Include="afxtoolbarbuttonslistbutton.h" />
+    <ClInclude Include="afxtoolbarcomboboxbutton.h" />
+    <ClInclude Include="afxtoolbardatetimectrl.h" />
+    <ClInclude Include="afxtoolbardropsource.h" />
+    <ClInclude Include="afxtoolbardroptarget.h" />
+    <ClInclude Include="afxtoolbareditboxbutton.h" />
+    <ClInclude Include="afxtoolbarfontcombobox.h" />
+    <ClInclude Include="afxtoolbarimages.h" />
+    <ClInclude Include="afxtoolbarmenubutton.h" />
+    <ClInclude Include="afxtoolbarmenubuttonsbutton.h" />
+    <ClInclude Include="afxtoolbarnamedialog.h" />
+    <ClInclude Include="afxtoolbarscommandslistbox.h" />
+    <ClInclude Include="afxtoolbarscustomizedialog.h" />
+    <ClInclude Include="afxtoolbarskeyboardpropertypage.h" />
+    <ClInclude Include="afxtoolbarslistcheckbox.h" />
+    <ClInclude Include="afxtoolbarslistpropertypage.h" />
+    <ClInclude Include="afxtoolbarsmenupropertypage.h" />
+    <ClInclude Include="afxtoolbarsoptionspropertypage.h" />
+    <ClInclude Include="afxtoolbarspineditboxbutton.h" />
+    <ClInclude Include="afxtoolbarstoolspropertypage.h" />
+    <ClInclude Include="afxtoolbarsystemmenubutton.h" />
+    <ClInclude Include="afxtooltipctrl.h" />
+    <ClInclude Include="afxtooltipmanager.h" />
+    <ClInclude Include="afxusertool.h" />
+    <ClInclude Include="afxusertoolsmanager.h" />
+    <ClInclude Include="afxver_.h" />
+    <ClInclude Include="afxvisualmanager.h" />
+    <ClInclude Include="afxvisualmanageroffice2003.h" />
+    <ClInclude Include="afxvisualmanageroffice2007.h" />
+    <ClInclude Include="afxvisualmanagerofficexp.h" />
+    <ClInclude Include="afxvisualmanagervs2005.h" />
+    <ClInclude Include="afxvisualmanagervs2008.h" />
+    <ClInclude Include="afxvisualmanagerwindows.h" />
+    <ClInclude Include="afxvisualmanagerwindows7.h" />
+    <ClInclude Include="afxvslistbox.h" />
+    <ClInclude Include="afxv_cfg.h" />
+    <ClInclude Include="afxv_cpu.h" />
+    <ClInclude Include="afxv_dll.h" />
+    <ClInclude Include="afxv_w32.h" />
+    <ClInclude Include="afxwfrmcmd.h" />
+    <ClInclude Include="afxwin.h" />
+    <ClInclude Include="afxwinappex.h" />
+    <ClInclude Include="afxwindowsmanagerdialog.h" />
+    <ClInclude Include="afxwinforms.h" />
+    <ClInclude Include="afxwinverapi.h" />
+    <ClInclude Include="atlacc.h" />
+    <ClInclude Include="atlalloc.h" />
+    <ClInclude Include="atlbase.h" />
+    <ClInclude Include="atlbuild.h" />
+    <ClInclude Include="atlchecked.h" />
+    <ClInclude Include="atlcoll.h" />
+    <ClInclude Include="atlcom.h" />
+    <ClInclude Include="atlcomcli.h" />
+    <ClInclude Include="ATLComMem.h" />
+    <ClInclude Include="ATLComTime.h" />
+    <ClInclude Include="atlconv.h" />
+    <ClInclude Include="atlcore.h" />
+    <ClInclude Include="atlctl.h" />
+    <ClInclude Include="atlcur.h" />
+    <ClInclude Include="atldb.h" />
+    <ClInclude Include="atldbcli.h" />
+    <ClInclude Include="atldbgmem.h" />
+    <ClInclude Include="atldbsch.h" />
+    <ClInclude Include="atldef.h" />
+    <ClInclude Include="atlenc.h" />
+    <ClInclude Include="atlevent.h" />
+    <ClInclude Include="atlexcept.h" />
+    <ClInclude Include="atlfile.h" />
+    <ClInclude Include="atlhandler.h" />
+    <ClInclude Include="atlhandlerimpl.h" />
+    <ClInclude Include="atlhost.h" />
+    <ClInclude Include="atliface.h" />
+    <ClInclude Include="atlimage.h" />
+    <ClInclude Include="atlmem.h" />
+    <ClInclude Include="atlpath.h" />
+    <ClInclude Include="atlplus.h" />
+    <ClInclude Include="atlpreviewctrlimpl.h" />
+    <ClInclude Include="atlrc.h" />
+    <ClInclude Include="atlsafe.h" />
+    <ClInclude Include="atlsecurity.h" />
+    <ClInclude Include="atlsimpcoll.h" />
+    <ClInclude Include="atlsimpstr.h" />
+    <ClInclude Include="atlsnap.h" />
+    <ClInclude Include="atlsocket.h" />
+    <ClInclude Include="atlstdthunk.h" />
+    <ClInclude Include="atlstr.h" />
+    <ClInclude Include="atlsync.h" />
+    <ClInclude Include="atltime.h" />
+    <ClInclude Include="atltrace.h" />
+    <ClInclude Include="atltransactionmanager.h" />
+    <ClInclude Include="atltypes.h" />
+    <ClInclude Include="atlutil.h" />
+    <ClInclude Include="atlwin.h" />
+    <ClInclude Include="atlwinverapi.h" />
+    <ClInclude Include="atlxml.h" />
+    <ClInclude Include="cstringt.h" />
+    <ClInclude Include="ctlimpl.h" />
+    <ClInclude Include="daoimpl.h" />
+    <ClInclude Include="dbimpl.h" />
+    <ClInclude Include="dispimpl.h" />
+    <ClInclude Include="elements.h" />
+    <ClInclude Include="fixalloc.h" />
+    <ClInclude Include="mfcm80.h" />
+    <ClInclude Include="occimpl.h" />
+    <ClInclude Include="ocdb.h" />
+    <ClInclude Include="ocdbid.h" />
+    <ClInclude Include="olebind.h" />
+    <ClInclude Include="oleimpl2.h" />
+    <ClInclude Include="sockimpl.h" />
+    <ClInclude Include="statreg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="winhand_.h" />
+    <ClInclude Include="winspool.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\DDM\stdafx.cpp" />
+    <ClCompile Include="afxabort.cpp" />
+    <ClCompile Include="afxacceleratorkey.cpp" />
+    <ClCompile Include="afxacceleratorkeyassignctrl.cpp" />
+    <ClCompile Include="afxanimationcontroller.cpp" />
+    <ClCompile Include="afxasert.cpp" />
+    <ClCompile Include="afxautohidebar.cpp" />
+    <ClCompile Include="afxautohidebutton.cpp" />
+    <ClCompile Include="afxautohidedocksite.cpp" />
+    <ClCompile Include="afxbasepane.cpp" />
+    <ClCompile Include="afxbaseribbonelement.cpp" />
+    <ClCompile Include="afxbasetabbedpane.cpp" />
+    <ClCompile Include="afxbasetabctrl.cpp" />
+    <ClCompile Include="afxbasetoolbar.cpp" />
+    <ClCompile Include="afxbutton.cpp" />
+    <ClCompile Include="afxcaptionbar.cpp" />
+    <ClCompile Include="afxcaptionbutton.cpp" />
+    <ClCompile Include="afxcaptionmenubutton.cpp" />
+    <ClCompile Include="afxcmdusagecount.cpp" />
+    <ClCompile Include="afxcolorbar.cpp" />
+    <ClCompile Include="afxcolorbutton.cpp" />
+    <ClCompile Include="afxcolordialog.cpp" />
+    <ClCompile Include="afxcolormenubutton.cpp" />
+    <ClCompile Include="afxcolorpickerctrl.cpp" />
+    <ClCompile Include="afxcolorpopupmenu.cpp" />
+    <ClCompile Include="afxcolorpropertysheet.cpp" />
+    <ClCompile Include="afxcommandmanager.cpp" />
+    <ClCompile Include="afxcontextmenumanager.cpp" />
+    <ClCompile Include="afxcontrolbarimpl.cpp" />
+    <ClCompile Include="afxcontrolrenderer.cpp" />
+    <ClCompile Include="afxcrit.cpp" />
+    <ClCompile Include="afxctrlcontainer.cpp" />
+    <ClCompile Include="afxctrlcontainer2.cpp" />
+    <ClCompile Include="afxcustomcolorspropertypage.cpp" />
+    <ClCompile Include="afxcustomizebutton.cpp" />
+    <ClCompile Include="afxcustomizemenubutton.cpp" />
+    <ClCompile Include="afxdatarecovery.cpp" />
+    <ClCompile Include="afxdbcs.cpp" />
+    <ClCompile Include="afxdesktopalertdialog.cpp" />
+    <ClCompile Include="afxdesktopalertwnd.cpp" />
+    <ClCompile Include="afxdialogex.cpp" />
+    <ClCompile Include="afxdialogimpl.cpp" />
+    <ClCompile Include="afxdockablepane.cpp" />
+    <ClCompile Include="afxdockablepaneadapter.cpp" />
+    <ClCompile Include="afxdockingmanager.cpp" />
+    <ClCompile Include="afxdockingpanesrow.cpp" />
+    <ClCompile Include="afxdocksite.cpp" />
+    <ClCompile Include="afxdragframeimpl.cpp" />
+    <ClCompile Include="afxdrawmanager.cpp" />
+    <ClCompile Include="afxdropdownlistbox.cpp" />
+    <ClCompile Include="afxdropdowntoolbar.cpp" />
+    <ClCompile Include="afxeditbrowsectrl.cpp" />
+    <ClCompile Include="afxfontcombobox.cpp" />
+    <ClCompile Include="afxframeimpl.cpp" />
+    <ClCompile Include="afxframewndex.cpp" />
+    <ClCompile Include="afxfullscreenimpl.cpp" />
+    <ClCompile Include="afxglobals.cpp" />
+    <ClCompile Include="afxglobalutils.cpp" />
+    <ClCompile Include="afxheaderctrl.cpp" />
+    <ClCompile Include="afximageeditordialog.cpp" />
+    <ClCompile Include="afximagepaintarea.cpp" />
+    <ClCompile Include="afxinl1.cpp" />
+    <ClCompile Include="afxinl2.cpp" />
+    <ClCompile Include="afxinl3.cpp" />
+    <ClCompile Include="afxinl4.cpp" />
+    <ClCompile Include="afxjumplist.cpp" />
+    <ClCompile Include="afxkeyboardmanager.cpp" />
+    <ClCompile Include="afxkeymapdialog.cpp" />
+    <ClCompile Include="afxlinkctrl.cpp" />
+    <ClCompile Include="afxlistctrl.cpp" />
+    <ClCompile Include="afxmaskededit.cpp" />
+    <ClCompile Include="afxmdichildwndex.cpp" />
+    <ClCompile Include="afxmdiclientareawnd.cpp" />
+    <ClCompile Include="afxmdiframewndex.cpp" />
+    <ClCompile Include="afxmem.cpp" />
+    <ClCompile Include="afxmenubar.cpp" />
+    <ClCompile Include="afxmenubutton.cpp" />
+    <ClCompile Include="afxmenuhash.cpp" />
+    <ClCompile Include="afxmenuimages.cpp" />
+    <ClCompile Include="afxmenutearoffmanager.cpp" />
+    <ClCompile Include="afxmousemanager.cpp" />
+    <ClCompile Include="afxmousepropertypage.cpp" />
+    <ClCompile Include="afxmultipaneframewnd.cpp" />
+    <ClCompile Include="afxolecntrframewndex.cpp" />
+    <ClCompile Include="afxoledocipframewndex.cpp" />
+    <ClCompile Include="afxoleipframewndex.cpp" />
+    <ClCompile Include="afxoleserverdocex.cpp" />
+    <ClCompile Include="afxoutlookbar.cpp" />
+    <ClCompile Include="afxoutlookbarpane.cpp" />
+    <ClCompile Include="afxoutlookbarpaneadapter.cpp" />
+    <ClCompile Include="afxoutlookbarpanebutton.cpp" />
+    <ClCompile Include="afxoutlookbartabctrl.cpp" />
+    <ClCompile Include="afxpane.cpp" />
+    <ClCompile Include="afxpanecontainer.cpp" />
+    <ClCompile Include="afxpanecontainermanager.cpp" />
+    <ClCompile Include="afxpanedialog.cpp" />
+    <ClCompile Include="afxpanedivider.cpp" />
+    <ClCompile Include="afxpaneframewnd.cpp" />
+    <ClCompile Include="afxpopupmenu.cpp" />
+    <ClCompile Include="afxpopupmenubar.cpp" />
+    <ClCompile Include="afxpreviewviewex.cpp" />
+    <ClCompile Include="afxpropertygridctrl.cpp" />
+    <ClCompile Include="afxpropertygridtooltipctrl.cpp" />
+    <ClCompile Include="afxpropertypage.cpp" />
+    <ClCompile Include="afxpropertysheet.cpp" />
+    <ClCompile Include="afxrebar.cpp" />
+    <ClCompile Include="afxrebarstate.cpp" />
+    <ClCompile Include="afxrecentdocksiteinfo.cpp" />
+    <ClCompile Include="afxregpath.cpp" />
+    <ClCompile Include="afxrendertarget.cpp" />
+    <ClCompile Include="afxribbonbar.cpp" />
+    <ClCompile Include="afxribbonbutton.cpp" />
+    <ClCompile Include="afxribbonbuttonsgroup.cpp" />
+    <ClCompile Include="afxribboncategory.cpp" />
+    <ClCompile Include="afxribboncheckbox.cpp" />
+    <ClCompile Include="afxribboncollector.cpp" />
+    <ClCompile Include="afxribboncolorbutton.cpp" />
+    <ClCompile Include="afxribboncombobox.cpp" />
+    <ClCompile Include="afxribboncommandslistbox.cpp" />
+    <ClCompile Include="afxribbonconstructor.cpp" />
+    <ClCompile Include="afxribboncustomizedialog.cpp" />
+    <ClCompile Include="afxribbonedit.cpp" />
+    <ClCompile Include="afxribboninfo.cpp" />
+    <ClCompile Include="afxribboninfo2.cpp" />
+    <ClCompile Include="afxribboninfoloader.cpp" />
+    <ClCompile Include="afxribbonkeyboardcustomizedialog.cpp" />
+    <ClCompile Include="afxribbonkeytip.cpp" />
+    <ClCompile Include="afxribbonlabel.cpp" />
+    <ClCompile Include="afxribbonlinkctrl.cpp" />
+    <ClCompile Include="afxribbonmainpanel.cpp" />
+    <ClCompile Include="afxribbonminitoolbar.cpp" />
+    <ClCompile Include="afxribbonpalettegallery.cpp" />
+    <ClCompile Include="afxribbonpanel.cpp" />
+    <ClCompile Include="afxribbonpanelmenu.cpp" />
+    <ClCompile Include="afxribbonprogressbar.cpp" />
+    <ClCompile Include="afxribbonquickaccesstoolbar.cpp" />
+    <ClCompile Include="afxribbonslider.cpp" />
+    <ClCompile Include="afxribbonstatusbar.cpp" />
+    <ClCompile Include="afxribbonstatusbarpane.cpp" />
+    <ClCompile Include="afxribbonundobutton.cpp" />
+    <ClCompile Include="afxrichpreviewctrlimpl.cpp" />
+    <ClCompile Include="afxsettingsstore.cpp" />
+    <ClCompile Include="afxshelllistctrl.cpp" />
+    <ClCompile Include="afxshellmanager.cpp" />
+    <ClCompile Include="afxshelltreectrl.cpp" />
+    <ClCompile Include="afxshowallbutton.cpp" />
+    <ClCompile Include="afxsmartdockingguide.cpp" />
+    <ClCompile Include="afxsmartdockinghighlighterwnd.cpp" />
+    <ClCompile Include="afxsmartdockingmanager.cpp" />
+    <ClCompile Include="afxsound.cpp" />
+    <ClCompile Include="afxspinbuttonctrl.cpp" />
+    <ClCompile Include="afxsplitterwndex.cpp" />
+    <ClCompile Include="afxstandardcolorspropertypage.cpp" />
+    <ClCompile Include="afxstate.cpp" />
+    <ClCompile Include="afxstatusbar.cpp" />
+    <ClCompile Include="afxtabbedpane.cpp" />
+    <ClCompile Include="afxtabctrl.cpp" />
+    <ClCompile Include="afxtabview.cpp" />
+    <ClCompile Include="afxtagmanager.cpp" />
+    <ClCompile Include="afxtaskdialog.cpp" />
+    <ClCompile Include="afxtaskspane.cpp" />
+    <ClCompile Include="afxtaskspaneframewnd.cpp" />
+    <ClCompile Include="afxtls.cpp" />
+    <ClCompile Include="afxtoolbar.cpp" />
+    <ClCompile Include="afxtoolbarbutton.cpp" />
+    <ClCompile Include="afxtoolbarbuttoncustomizedialog.cpp" />
+    <ClCompile Include="afxtoolbarbuttonslistbutton.cpp" />
+    <ClCompile Include="afxtoolbarcomboboxbutton.cpp" />
+    <ClCompile Include="afxtoolbardatetimectrl.cpp" />
+    <ClCompile Include="afxtoolbardropsource.cpp" />
+    <ClCompile Include="afxtoolbardroptarget.cpp" />
+    <ClCompile Include="afxtoolbareditboxbutton.cpp" />
+    <ClCompile Include="afxtoolbarfontcombobox.cpp" />
+    <ClCompile Include="afxtoolbarimages.cpp" />
+    <ClCompile Include="afxtoolbarmenubutton.cpp" />
+    <ClCompile Include="afxtoolbarmenubuttonsbutton.cpp" />
+    <ClCompile Include="afxtoolbarnamedialog.cpp" />
+    <ClCompile Include="afxtoolbarscommandslistbox.cpp" />
+    <ClCompile Include="afxtoolbarscustomizedialog.cpp" />
+    <ClCompile Include="afxtoolbarskeyboardpropertypage.cpp" />
+    <ClCompile Include="afxtoolbarslistcheckbox.cpp" />
+    <ClCompile Include="afxtoolbarslistpropertypage.cpp" />
+    <ClCompile Include="afxtoolbarsmenupropertypage.cpp" />
+    <ClCompile Include="afxtoolbarsoptionspropertypage.cpp" />
+    <ClCompile Include="afxtoolbarspineditboxbutton.cpp" />
+    <ClCompile Include="afxtoolbarstoolspropertypage.cpp" />
+    <ClCompile Include="afxtoolbarsystemmenubutton.cpp" />
+    <ClCompile Include="afxtooltipctrl.cpp" />
+    <ClCompile Include="afxtooltipmanager.cpp" />
+    <ClCompile Include="afxtrace.cpp" />
+    <ClCompile Include="afxusertool.cpp" />
+    <ClCompile Include="afxusertoolsmanager.cpp" />
+    <ClCompile Include="afxvisualmanager.cpp" />
+    <ClCompile Include="afxvisualmanageroffice2003.cpp" />
+    <ClCompile Include="afxvisualmanageroffice2007.cpp" />
+    <ClCompile Include="afxvisualmanagerofficexp.cpp" />
+    <ClCompile Include="afxvisualmanagervs2005.cpp" />
+    <ClCompile Include="afxvisualmanagervs2008.cpp" />
+    <ClCompile Include="afxvisualmanagerwindows.cpp" />
+    <ClCompile Include="afxvisualmanagerwindows7.cpp" />
+    <ClCompile Include="afxvslistbox.cpp" />
+    <ClCompile Include="afxwfrminl.cpp" />
+    <ClCompile Include="afxwinappex.cpp" />
+    <ClCompile Include="afxwindowsmanagerdialog.cpp" />
+    <ClCompile Include="afxwinverapi.cpp" />
+    <ClCompile Include="appcore.cpp" />
+    <ClCompile Include="appdlg.cpp" />
+    <ClCompile Include="apphelp.cpp" />
+    <ClCompile Include="apphelpx.cpp" />
+    <ClCompile Include="appinit.cpp" />
+    <ClCompile Include="appmodul.cpp" />
+    <ClCompile Include="appprnt.cpp" />
+    <ClCompile Include="appterm.cpp" />
+    <ClCompile Include="appui.cpp" />
+    <ClCompile Include="appui1.cpp" />
+    <ClCompile Include="appui2.cpp" />
+    <ClCompile Include="appui3.cpp" />
+    <ClCompile Include="arccore.cpp" />
+    <ClCompile Include="arcex.cpp" />
+    <ClCompile Include="arcobj.cpp" />
+    <ClCompile Include="arcstrm.cpp" />
+    <ClCompile Include="array_b.cpp" />
+    <ClCompile Include="array_d.cpp" />
+    <ClCompile Include="array_o.cpp" />
+    <ClCompile Include="array_p.cpp" />
+    <ClCompile Include="array_s.cpp" />
+    <ClCompile Include="array_u.cpp" />
+    <ClCompile Include="array_w.cpp" />
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="auxdata.cpp" />
+    <ClCompile Include="barcool.cpp" />
+    <ClCompile Include="barcore.cpp" />
+    <ClCompile Include="bardlg.cpp" />
+    <ClCompile Include="bardock.cpp" />
+    <ClCompile Include="barstat.cpp" />
+    <ClCompile Include="bartool.cpp" />
+    <ClCompile Include="ccdata.cpp" />
+    <ClCompile Include="cmdtarg.cpp" />
+    <ClCompile Include="ctlcache.cpp" />
+    <ClCompile Include="ctlconn.cpp" />
+    <ClCompile Include="ctlcore.cpp" />
+    <ClCompile Include="ctldata.cpp" />
+    <ClCompile Include="ctlevent.cpp" />
+    <ClCompile Include="ctlfont.cpp" />
+    <ClCompile Include="ctlframe.cpp" />
+    <ClCompile Include="ctlinl.cpp" />
+    <ClCompile Include="ctlinplc.cpp" />
+    <ClCompile Include="ctllic.cpp" />
+    <ClCompile Include="ctlmodul.cpp" />
+    <ClCompile Include="ctlnownd.cpp" />
+    <ClCompile Include="ctlobj.cpp" />
+    <ClCompile Include="ctlpbag.cpp" />
+    <ClCompile Include="ctlpict.cpp" />
+    <ClCompile Include="ctlppg.cpp" />
+    <ClCompile Include="ctlprop.cpp" />
+    <ClCompile Include="ctlpropx.cpp" />
+    <ClCompile Include="ctlpset.cpp" />
+    <ClCompile Include="ctlpstg.cpp" />
+    <ClCompile Include="ctlpstm.cpp" />
+    <ClCompile Include="ctlquick.cpp" />
+    <ClCompile Include="ctlrefl.cpp" />
+    <ClCompile Include="ctlreg.cpp" />
+    <ClCompile Include="ctltrack.cpp" />
+    <ClCompile Include="ctlview.cpp" />
+    <ClCompile Include="daocore.cpp" />
+    <ClCompile Include="daodfx.cpp" />
+    <ClCompile Include="daoview.cpp" />
+    <ClCompile Include="dbcore.cpp" />
+    <ClCompile Include="dbflt.cpp" />
+    <ClCompile Include="dblong.cpp" />
+    <ClCompile Include="dbrfx.cpp" />
+    <ClCompile Include="dbvar.cpp" />
+    <ClCompile Include="dbview.cpp" />
+    <ClCompile Include="dcmeta.cpp" />
+    <ClCompile Include="dcprev.cpp" />
+    <ClCompile Include="dlgclr.cpp" />
+    <ClCompile Include="dlgcomm.cpp" />
+    <ClCompile Include="dlgcore.cpp" />
+    <ClCompile Include="dlgdata.cpp" />
+    <ClCompile Include="dlgdhtml.cpp" />
+    <ClCompile Include="dlgfile.cpp" />
+    <ClCompile Include="dlgfloat.cpp" />
+    <ClCompile Include="dlgfnt.cpp" />
+    <ClCompile Include="dlgfr.cpp" />
+    <ClCompile Include="dlgprnt.cpp" />
+    <ClCompile Include="dlgprntx.cpp" />
+    <ClCompile Include="dlgprop.cpp" />
+    <ClCompile Include="dlgtempl.cpp" />
+    <ClCompile Include="dllinit.cpp" />
+    <ClCompile Include="dllmodul.cpp" />
+    <ClCompile Include="doccore.cpp" />
+    <ClCompile Include="dockcont.cpp" />
+    <ClCompile Include="dockstat.cpp" />
+    <ClCompile Include="docmapi.cpp" />
+    <ClCompile Include="docmgr.cpp" />
+    <ClCompile Include="docmulti.cpp" />
+    <ClCompile Include="docsingl.cpp" />
+    <ClCompile Include="doctempl.cpp" />
+    <ClCompile Include="dumpcont.cpp" />
+    <ClCompile Include="dumpflt.cpp" />
+    <ClCompile Include="dumpinit.cpp" />
+    <ClCompile Include="dumpout.cpp" />
+    <ClCompile Include="dumpstak.cpp" />
+    <ClCompile Include="except.cpp" />
+    <ClCompile Include="filecore.cpp" />
+    <ClCompile Include="filefind.cpp" />
+    <ClCompile Include="filelist.cpp" />
+    <ClCompile Include="filemem.cpp" />
+    <ClCompile Include="fileshrd.cpp" />
+    <ClCompile Include="filest.cpp" />
+    <ClCompile Include="filetxt.cpp" />
+    <ClCompile Include="filex.cpp" />
+    <ClCompile Include="fixalloc.cpp" />
+    <ClCompile Include="inet.cpp" />
+    <ClCompile Include="inetcall.cpp" />
+    <ClCompile Include="list_o.cpp" />
+    <ClCompile Include="list_p.cpp" />
+    <ClCompile Include="list_s.cpp" />
+    <ClCompile Include="map_pp.cpp" />
+    <ClCompile Include="map_pw.cpp" />
+    <ClCompile Include="map_so.cpp" />
+    <ClCompile Include="map_sp.cpp" />
+    <ClCompile Include="map_ss.cpp" />
+    <ClCompile Include="map_wo.cpp" />
+    <ClCompile Include="map_wp.cpp" />
+    <ClCompile Include="mfcm.cpp" />
+    <ClCompile Include="mfcm80.cpp" />
+    <ClCompile Include="mtcore.cpp" />
+    <ClCompile Include="mtex.cpp" />
+    <ClCompile Include="nolib.cpp" />
+    <ClCompile Include="objcore.cpp" />
+    <ClCompile Include="occcont.cpp" />
+    <ClCompile Include="occddx.cpp" />
+    <ClCompile Include="occddxf.cpp" />
+    <ClCompile Include="occdlg.cpp" />
+    <ClCompile Include="occevent.cpp" />
+    <ClCompile Include="occlock.cpp" />
+    <ClCompile Include="occmgr.cpp" />
+    <ClCompile Include="occsite.cpp" />
+    <ClCompile Include="oleasmon.cpp" />
+    <ClCompile Include="olebar.cpp" />
+    <ClCompile Include="olecall.cpp" />
+    <ClCompile Include="olecli1.cpp" />
+    <ClCompile Include="olecli2.cpp" />
+    <ClCompile Include="olecli3.cpp" />
+    <ClCompile Include="olecnvrt.cpp" />
+    <ClCompile Include="oleconn.cpp" />
+    <ClCompile Include="oledata.cpp" />
+    <ClCompile Include="oledisp1.cpp" />
+    <ClCompile Include="oledisp2.cpp" />
+    <ClCompile Include="oledlgs1.cpp" />
+    <ClCompile Include="oledlgs2.cpp" />
+    <ClCompile Include="oledlgs3.cpp" />
+    <ClCompile Include="oledll.cpp" />
+    <ClCompile Include="oledobj1.cpp" />
+    <ClCompile Include="oledobj2.cpp" />
+    <ClCompile Include="oledoc1.cpp" />
+    <ClCompile Include="oledoc2.cpp" />
+    <ClCompile Include="oledoccl.cpp" />
+    <ClCompile Include="oledocip.cpp" />
+    <ClCompile Include="oledocob.cpp" />
+    <ClCompile Include="oledoctg.cpp" />
+    <ClCompile Include="oledocvw.cpp" />
+    <ClCompile Include="oledrop1.cpp" />
+    <ClCompile Include="oledrop2.cpp" />
+    <ClCompile Include="oleenum.cpp" />
+    <ClCompile Include="oleexp.cpp" />
+    <ClCompile Include="olefact.cpp" />
+    <ClCompile Include="oleinit.cpp" />
+    <ClCompile Include="oleipfrm.cpp" />
+    <ClCompile Include="olelink.cpp" />
+    <ClCompile Include="olelock.cpp" />
+    <ClCompile Include="olemisc.cpp" />
+    <ClCompile Include="olemon.cpp" />
+    <ClCompile Include="olemsgf.cpp" />
+    <ClCompile Include="olepset.cpp" />
+    <ClCompile Include="olereg.cpp" />
+    <ClCompile Include="olestrm.cpp" />
+    <ClCompile Include="olesvr1.cpp" />
+    <ClCompile Include="olesvr2.cpp" />
+    <ClCompile Include="oletsvr.cpp" />
+    <ClCompile Include="oletyplb.cpp" />
+    <ClCompile Include="oleui1.cpp" />
+    <ClCompile Include="oleui2.cpp" />
+    <ClCompile Include="oleunk.cpp" />
+    <ClCompile Include="olevar.cpp" />
+    <ClCompile Include="olevar1.cpp" />
+    <ClCompile Include="oleverb.cpp" />
+    <ClCompile Include="plex.cpp" />
+    <ClCompile Include="postdllmain.cpp" />
+    <ClCompile Include="postrawdllmain.cpp" />
+    <ClCompile Include="sockcore.cpp" />
+    <ClCompile Include="sockexp.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="strcore.cpp" />
+    <ClCompile Include="thrdcore.cpp" />
+    <ClCompile Include="timecore.cpp" />
+    <ClCompile Include="tooltip.cpp" />
+    <ClCompile Include="trckrect.cpp" />
+    <ClCompile Include="validadd.cpp" />
+    <ClCompile Include="viewcmn.cpp" />
+    <ClCompile Include="viewcore.cpp" />
+    <ClCompile Include="viewedit.cpp" />
+    <ClCompile Include="viewform.cpp" />
+    <ClCompile Include="viewhtml.cpp" />
+    <ClCompile Include="viewoled.cpp" />
+    <ClCompile Include="viewprev.cpp" />
+    <ClCompile Include="viewprnt.cpp" />
+    <ClCompile Include="viewrich.cpp" />
+    <ClCompile Include="viewscrl.cpp" />
+    <ClCompile Include="wfrmcmd.cpp" />
+    <ClCompile Include="wfrmsite.cpp" />
+    <ClCompile Include="wfrmview.cpp" />
+    <ClCompile Include="winbtn.cpp" />
+    <ClCompile Include="wincore.cpp" />
+    <ClCompile Include="wincore2.cpp" />
+    <ClCompile Include="winctrl1.cpp" />
+    <ClCompile Include="winctrl2.cpp" />
+    <ClCompile Include="winctrl3.cpp" />
+    <ClCompile Include="winctrl4.cpp" />
+    <ClCompile Include="winctrl5.cpp" />
+    <ClCompile Include="winctrl6.cpp" />
+    <ClCompile Include="winctrl7.cpp" />
+    <ClCompile Include="winctrl8.cpp" />
+    <ClCompile Include="winfrm.cpp" />
+    <ClCompile Include="winfrm2.cpp" />
+    <ClCompile Include="winfrmx.cpp" />
+    <ClCompile Include="wingdi.cpp" />
+    <ClCompile Include="wingdix.cpp" />
+    <ClCompile Include="winhand.cpp" />
+    <ClCompile Include="winmain.cpp" />
+    <ClCompile Include="winmdi.cpp" />
+    <ClCompile Include="winmenu.cpp" />
+    <ClCompile Include="winmini.cpp" />
+    <ClCompile Include="winocc.cpp" />
+    <ClCompile Include="winsplit.cpp" />
+    <ClCompile Include="winstr.cpp" />
+    <ClCompile Include="winutil.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
