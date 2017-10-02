@@ -134,7 +134,7 @@
 #define AFX_IDW_DOCKBAR_BOTTOM          0xE81E
 #define AFX_IDW_DOCKBAR_FLOAT           0xE81F
 
-// Macro for mapping standard control bars to bitmask (limit of 32)
+// 将标准控制条映射到位掩码的宏 (limit of 32)
 #define AFX_CONTROLBAR_MASK(nIDC)   (1L << (nIDC - AFX_IDW_CONTROLBAR_FIRST))
 
 // parts of Main Frame

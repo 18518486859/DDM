@@ -20,12 +20,15 @@ BOOL CALLBACK _AfxPreviewCloseProc(CFrameWnd* pFrameWnd);
 CPrintPreviewState::CPrintPreviewState()
 {
 	// set defaults
+
+	//在MFC底层机制中，使用预定义AFX_IDW_PANE_FIRST
+	//来标识应用程序框架窗口中默认的文档窗口(视图)。
 	nIDMainPane = AFX_IDW_PANE_FIRST;
-	dwStates = AFX_CONTROLBAR_MASK(AFX_IDW_STATUS_BAR);
-						// status bar visible if available
+	dwStates = AFX_CONTROLBAR_MASK(AFX_IDW_STATUS_BAR);//值为2
+						// 如果可用状态栏可见
 	lpfnCloseProc = _AfxPreviewCloseProc;
-						// set frame hook so closing the frame window
-						//  when in preview state will just end the mode
+						// 设置框架挂钩，关闭框架窗口
+						//  在预览状态时，只会结束模式
 	hMenu = NULL;
 	pViewActiveOld = NULL;
 	hAccelTable = NULL;
@@ -36,32 +39,26 @@ CPrintPreviewState::CPrintPreviewState()
 
 void CView::OnFilePrintPreview()
 {
-	//在派生类中 , 实现特殊的窗口处理
-	//如果实现的话，一定要把主窗口关闭。
+	// 在派生类中，在这里实现特殊的窗口处理
+	//一定要将框架窗口关闭，如果上钩。
 
-	// 预览不能在主窗口创建.  必须要比这个函数的生命周期长
+	// 预览不能在主窗口创建.  必须比这个函数长久
 	CPrintPreviewState* pState = new CPrintPreviewState;
 
 	TRY
 	{
-		// DoPrintPreview's return value does not necessarily indicate that
-		// Print preview succeeded or failed, but rather what actions are necessary
-		// at this point.  If DoPrintPreview returns TRUE, it means that
-		// OnEndPrintPreview will be (or has already been) called and the
-		// pState structure will be/has been deleted.
-		// If DoPrintPreview returns FALSE, it means that OnEndPrintPreview
-		// WILL NOT be called and that cleanup, including deleting pState
-		// must be done here.
+		/* DoPrintPreview的返回值并不一定表示打印预览成功或失败,更重要的是需要采取什么行动.
+		在这一点上,如果DoPrintPreview返回TRUE，则意味着OnEndPrintPreview(或已经被)调用了。
+		pState结构将被删除。如果DoPrintPreview返回FALSE，意味着OnEndPrintPreview将不会调用
+		和清理，包括删除pState必须在这里完成。*/
 
 		if (!DoPrintPreview(AFX_IDD_PREVIEW_TOOLBAR, this,
 								RUNTIME_CLASS(CPreviewView), pState))
 		{
-			// In derived classes, reverse special window handling here for
-			// Preview failure case
-
+			// 在派生类中，预览失败后和处理
 			TRACE(traceAppMsg, 0, "Error: DoPrintPreview failed.\n");
 			AfxMessageBox(AFX_IDP_COMMAND_FAILURE);
-			delete pState;      // preview failed to initialize, delete State now
+			delete pState;      // 预览没有初始化，现在删除pState
 		}
 	}
 	CATCH_ALL(e)
@@ -81,22 +78,26 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 	ASSERT(pPreviewViewClass->IsDerivedFrom(RUNTIME_CLASS(CPreviewView)));
 	ASSERT(pState != NULL);
 
+	//获取父框架窗口指针			
 	CWnd* pMainWnd = GetParentFrame();
+
+	//如果pMainWnd对应于CFrameWnd类，则返回pMainWnd，否则为NULL
 	if (DYNAMIC_DOWNCAST(CFrameWnd, pMainWnd) == NULL)
 	{
-		// if it's not a frame, we'll try the main window
+		//获取主窗口的指针
 		pMainWnd = AfxGetMainWnd();
 	}
-
+	//将指针pMainWnd转换成CFrameWnd类型
 	CFrameWnd* pParent = STATIC_DOWNCAST(CFrameWnd, pMainWnd);
 	ASSERT_VALID(pParent);
 
+	//创建一个CCreateContext结构体
 	CCreateContext context;
 	context.m_pCurrentFrame = pParent;
 	context.m_pCurrentDoc = GetDocument();
 	context.m_pLastView = this;
 
-	// Create the preview view object
+	// 创建一个CPreviewView对像
 	CPreviewView* pView = (CPreviewView*)pPreviewViewClass->CreateObject();
 	if (pView == NULL)
 	{
@@ -104,13 +105,15 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 		return FALSE;
 	}
 	ASSERT_KINDOF(CPreviewView, pView);
-	pView->m_pPreviewState = pState;        // save pointer
+	pView->m_pPreviewState = pState;        // 保存指针
 
-	pParent->OnSetPreviewMode(TRUE, pState);    // Take over Frame Window
+	//调用此成员函数设置应用的主框架窗口是预打印模式。接管框架窗口
+	pParent->OnSetPreviewMode(TRUE, pState);
 
-	// Create the toolbar from the dialog resource
+	// 从对话框资源创建工具栏
 	pView->m_pToolBar = new CDialogBar;
 
+	//获取一个指向MDI框架窗口的活动多文档界面（MDI）子窗口的指针。
 	CFrameWnd *pParentFrame = pParent->GetActiveFrame();
 	ASSERT(pParentFrame);
 
@@ -208,7 +211,7 @@ BOOL CView::DoPrintPreview(UINT nIDResource, CView* pPrintView,
 		return FALSE;
 	}
 
-	// Preview window shown now
+	// 现在显示预览窗口
 	pState->pViewActiveOld = pParent->GetActiveView();
 	CView* pActiveView = pParent->GetActiveFrame()->GetActiveView();
 
