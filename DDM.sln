@@ -7,8 +7,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDM", "DDM\DDM.vcxproj", "{
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DDMPrinter", "DDMPrinter\DDMPrinter.vcxproj", "{76E9630F-A09A-4003-A892-C9130C4CB168}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MFC-Resources", "MFC-Resources\MFC-Resources.vcxproj", "{5A63FC8C-492D-4D57-86D4-7A49919DA947}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -23,10 +21,6 @@ Global
 		{76E9630F-A09A-4003-A892-C9130C4CB168}.Debug|Win32.Build.0 = Debug|Win32
 		{76E9630F-A09A-4003-A892-C9130C4CB168}.Release|Win32.ActiveCfg = Release|Win32
 		{76E9630F-A09A-4003-A892-C9130C4CB168}.Release|Win32.Build.0 = Release|Win32
-		{5A63FC8C-492D-4D57-86D4-7A49919DA947}.Debug|Win32.ActiveCfg = Debug|Win32
-		{5A63FC8C-492D-4D57-86D4-7A49919DA947}.Debug|Win32.Build.0 = Debug|Win32
-		{5A63FC8C-492D-4D57-86D4-7A49919DA947}.Release|Win32.ActiveCfg = Release|Win32
-		{5A63FC8C-492D-4D57-86D4-7A49919DA947}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
